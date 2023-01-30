@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DOCS 1.0" verbose="3">
+    <listeners>
+        <listener class-name="Utils.ListenersConfig"/>
+    </listeners>
+    <test name="UploadBandhuDocsTest">
+        <classes>
+            <class name="TestCases.UploadBandhuDocs_Test">
+                <methods>
+                    <include name = "UploadbandhuDocsSheetsetter"/>
+                    <include name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
+                    <include name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
+                    <include name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
+                    <include name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
+                    <include name = "TC_005_Verify_EmailID_With_InValidEmail"/>
+                    <include name = "TC_006_Verify_User_is_Created"/>
+                    <include name = "TC_007_Verify_Userdata_is_Stored_in_Database"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

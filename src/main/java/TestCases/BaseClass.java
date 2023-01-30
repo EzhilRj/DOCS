@@ -1,0 +1,156 @@
+package TestCases;
+
+import PageObjects.LoginPage;
+import Utils.ReadConfig;
+import Utils.XLConfig;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
+
+public class BaseClass {
+
+    static ReadConfig readconfig = new ReadConfig();
+    public String browser = readconfig.GetBrowser();
+    public String Baseurl = readconfig.getapplicationURL();
+
+   public Logger log = Logger.getLogger("BANDHUDOCSWEB");
+
+   final String username = "AJAZALI";
+   final String password = "AJAZALI@123";
+   final String company = "ARVIND";
+
+   public static String filepath = "./src/main/resources/Datas/DocsTestDatas.xls";
+
+    public static String excelfilepath = filepath;
+
+    public static XLConfig xlcon = new XLConfig();
+
+    public static WebDriver driver;
+    long StartTime;
+    long endTime;
+
+    @BeforeSuite
+    public void StartBrowser() throws InterruptedException, IOException {
+
+        ChromeOptions opt =  new ChromeOptions();
+        opt.setHeadless(false);
+
+        DOMConfigurator.configure("Log4J.xml");
+        if (browser.equalsIgnoreCase("Chrome")) {
+
+            log.info("Chrome is Opened");
+            WebDriverManager.chromedriver().setup();
+
+            driver = new ChromeDriver(opt);
+
+        } else if (browser.equalsIgnoreCase("firefox")) {
+
+            log.info("Firefox is Opened");
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver(opt);
+
+        } else if (browser.equalsIgnoreCase("Edge")) {
+
+            log.info("Microsoft Edge is Opened");
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver(opt);
+
+        }
+
+        driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+        driver.get(Baseurl);
+        log.info(Baseurl);
+        driver.manage().window().maximize();
+        PageFactory.initElements(driver, LoginPage.class);
+        LoginPage.SetLoginCredentials(username,password,company);
+
+
+    }
+
+    @AfterSuite(enabled = true)
+    public void closebrowser() throws InterruptedException {
+
+        driver.quit();
+        endTime = System.currentTimeMillis();
+        long Totaltime = endTime - StartTime;
+        System.out.println("TIMETAKEN:" + Totaltime);
+        driver.quit();
+
+    }
+
+    @AfterMethod
+    public void captureScreen(ITestResult result) throws IOException {
+
+        if (result.getStatus() == ITestResult.FAILURE) {
+            TakesScreenshot ts = (TakesScreenshot) driver;
+            File source = ts.getScreenshotAs(OutputType.FILE); // capture screenshot file
+            File target = new File(System.getProperty("user.dir") + "/ScreenShots/" + result.getName() + ".png");
+
+            FileUtils.copyFile(source, target);
+        }
+
+    }
+
+    public String GetRandomNumber() {
+
+        int randomnum1 = ThreadLocalRandom.current().nextInt();
+        String randomnum = String.valueOf(randomnum1);
+
+        return randomnum;
+
+    }
+
+    public String GetRandomSpecialCharacters() {
+
+        String Randspecchar = "!@#$%^&*()_+{}";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 10) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * Randspecchar.length());
+            salt.append(Randspecchar.charAt(index));
+        }
+        String Randomspecailcharac = salt.toString();
+        return Randomspecailcharac;
+
+    }
+
+    public String GetRandomString(){
+
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        StringBuilder sb = new StringBuilder();
+        Random random = new Random();
+        int length = 7;for(int i = 0; i < length; i++) {
+
+            int index = random.nextInt(alphabet.length());
+
+            char randomChar = alphabet.charAt(index);
+
+            sb.append(randomChar);
+        }
+
+        String randomString = sb.toString();
+
+        return randomString;
+    }
+
+
+}
