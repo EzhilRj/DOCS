@@ -38,4 +38,19 @@ public class ReadConfig {
         return Url;
 
     }
+
+    public String GetdownloadFilepath() {
+
+        String downloadpath = pro.getProperty("downloadinglocation");
+        return downloadpath;
+
+    }
+
+
+    public String Getuploadfilepath() {
+
+        String uploadpath = pro.getProperty("Uploadinglocation");
+        return uploadpath;
+
+    }
 }

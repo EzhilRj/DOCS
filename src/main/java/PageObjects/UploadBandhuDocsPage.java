@@ -1,5 +1,6 @@
 package PageObjects;
 
+import Utils.DBConfig;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,67 +14,63 @@ import javax.swing.*;
 
 import java.io.IOException;
 
-import static TestCases.BaseClass.*;
+import static Scripts.BaseClass.*;
+import static Utils.DBConfig.ConnectDB;
 
 public class UploadBandhuDocsPage {
 
-    WebDriver driver;
-
-    public UploadBandhuDocsPage(WebDriver driver){
-
-        this.driver = driver;
-
-    }
-
     @FindBy(xpath = "//*[text()='Bandhu Process']")
-    public WebElement Bandhuprocess;
+    public static WebElement Bandhuprocess;
 
     @FindBy(xpath = "//*[text()='Upload Bandhu Docs']")
-    public  WebElement UploadbandhuDocs;
+    public static WebElement UploadbandhuDocs;
 
     @FindBy(id = "ctl00_Content_txtEmployeeName")
-    public WebElement Employeename;
+    public static WebElement Employeename;
 
     @FindBy(id = "ctl00_Content_txtMobileNo")
-    public  WebElement Mobileno;
+    public static WebElement Mobileno;
 
     @FindBy(id = "ctl00_Content_txtEmailID")
-    public WebElement EmailID;
+    public static WebElement EmailID;
 
     @FindBy(id = "ctl00_Content_Button1")
-    public WebElement Save;
+    public static WebElement Save;
 
     @FindBy(id = "ctl00_Content_btnUpload")
-    public WebElement upload;
+    public static WebElement upload;
 
     @FindBy(id = "ctl00_Content_btnExport")
-    public WebElement Export;
+    public static WebElement Export;
 
     @FindBy(id = "ctl00_Content_excelFile")
-    public WebElement Choosefile;
+    public static WebElement Choosefile;
 
 
     @FindBy(id = "ctl00_Content_regexpName")
-    public WebElement textboxerrmsg;
+    public static WebElement textboxerrmsg;
 
     @FindBy(id = "ctl00_Content_RegularExpressionValidator")
-    public WebElement EmployeenameErrmsg;
+    public static WebElement EmployeenameErrmsg;
 
     @FindBy(id = "ctl00_Content_RegularExpressionValidator3")
-    public WebElement mobilenumErrmsg;
+    public static WebElement mobilenumErrmsg;
 
     @FindBy(id = "ctl00_Content_RegularExpressionValidator5")
-    public WebElement EmailIdErrmsg;
+    public static WebElement EmailIdErrmsg;
+
+    @FindBy(className= "errorInsmsg")
+    public static WebElement Errormsg;
 
 
-    public  void SetEmpname(String empname){
+    public static void SetEmpname(String empname){
 
         Employeename.sendKeys(empname);
         Mobileno.click();
 
     }
 
-    public  void SetMobileno(String mobno){
+    public static void SetMobileno(String mobno){
 
         Mobileno.sendKeys(mobno);
         EmailID.click();
@@ -81,14 +78,14 @@ public class UploadBandhuDocsPage {
 
     }
 
-    public  void SetEmailid(String email){
+    public static void SetEmailid(String email){
 
         EmailID.sendKeys(email);
         Mobileno.click();
 
     }
 
-    public  void SetCredentials(String Employee,String Mobilenum , String Email ){
+    public static void SetCredentials(String Employee,String Mobilenum , String Email ){
 
         Employeename.sendKeys(Employee);
         Mobileno.sendKeys(Mobilenum);
@@ -97,31 +94,31 @@ public class UploadBandhuDocsPage {
     }
 
 
-    public void savebutton(){
+    public static void savebutton(){
 
         Save.click();
 
     }
 
-    public void Uploadbutton(){
+    public static void Uploadbutton(){
 
         upload.click();
 
     }
 
-    public void ExportButton(){
+    public static void ExportButton(){
 
         Export.click();
 
     }
 
-    public void Choosefile(){
+    public static void Choosefile(){
 
         Choosefile.click();
 
     }
 
-    public  String EmployeenameTextBoxErrormsg(){
+    public static String EmployeenameTextBoxErrormsg(){
 
 
         String errmsg1 = EmployeenameErrmsg.getText();
@@ -129,7 +126,7 @@ public class UploadBandhuDocsPage {
         return errmsg1;
     }
 
-    public  String mobilenumTextBoxErrormsg(){
+    public static String mobilenumTextBoxErrormsg(){
 
 
         String errmsg2 = mobilenumErrmsg.getText();
@@ -137,7 +134,7 @@ public class UploadBandhuDocsPage {
         return errmsg2;
     }
 
-    public String EmailIDTextBoxErrormsg(){
+    public static String EmailIDTextBoxErrormsg(){
 
 
         String errmsg3 = EmailIdErrmsg.getText();
@@ -146,15 +143,15 @@ public class UploadBandhuDocsPage {
     }
 
 
-    public void clickModule(){
+    public static void clickModule(){
 
-       this.Bandhuprocess.click();
-       this.UploadbandhuDocs.click();
+        UploadBandhuDocsPage.Bandhuprocess.click();
+        UploadBandhuDocsPage.UploadbandhuDocs.click();
     }
 
 
     //TextBox Validation
-    public void TextboxValidate(int value,String errmsg,int row , int cell) throws IOException {
+    public static void TextboxValidate(int value,String errmsg,int row , int cell) throws IOException {
 
 
         if (value == 1) {
@@ -191,21 +188,24 @@ public class UploadBandhuDocsPage {
     }
 
 
-    public void Validate(String errmsg,int row , int column) throws IOException {
+    public static void Validate(String errmsg,int row , int column) throws IOException {
 
         if(driver.getPageSource().contains(errmsg)){
 
-
-            Assert.assertTrue(true);
             xlcon.setCellValue(row,column,"TestCase Passed",excelfilepath);
+            Assert.assertTrue(true);
 
 
-        }else{
 
-            Assert.assertTrue(false);
+        }else {
+
             xlcon.setCellValue(row,column,"TestCase Failed",excelfilepath);
+            xlcon.setCellValue(6,4,"Cause : "+Errormsg.getText(),excelfilepath);
+            Assert.assertTrue(false);
+
 
         }
+        
 
     }
 

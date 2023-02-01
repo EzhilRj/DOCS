@@ -1,4 +1,4 @@
-package TestCases;
+package Scripts;
 
 import PageObjects.LoginPage;
 import Utils.ReadConfig;
@@ -22,23 +22,30 @@ import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
+    //Properties File Reading
     static ReadConfig readconfig = new ReadConfig();
     public String browser = readconfig.GetBrowser();
     public String Baseurl = readconfig.getapplicationURL();
+    public String downloadedpath = readconfig.GetdownloadFilepath();
+    public String uploadingpath = readconfig.Getuploadfilepath();
 
+    //TestData FilePath
+    public static String filepath = "./src/main/resources/Datas/DocsTestDatas.xls";
+
+    //Log
    public Logger log = Logger.getLogger("BANDHUDOCSWEB");
 
+   //Login Credentials
    final String username = "AJAZALI";
    final String password = "AJAZALI@123";
    final String company = "ARVIND";
-
-   public static String filepath = "./src/main/resources/Datas/DocsTestDatas.xls";
 
     public static String excelfilepath = filepath;
 
@@ -48,11 +55,17 @@ public class BaseClass {
     long StartTime;
     long endTime;
 
+    String downloadinglocation = System.getProperty("user.dir")+"\\Downloads\\";
+    String Uploadinglocation = System.getProperty("user.dir")+"\\UploadingFiles\\";
+
     @BeforeSuite
     public void StartBrowser() throws InterruptedException, IOException {
 
-        ChromeOptions opt =  new ChromeOptions();
-        opt.setHeadless(false);
+        HashMap preferences  =  new HashMap();
+        preferences.put("download.default_directory",downloadinglocation);
+
+        ChromeOptions options =  new ChromeOptions();
+        options.setExperimentalOption("prefs",preferences);
 
         DOMConfigurator.configure("Log4J.xml");
         if (browser.equalsIgnoreCase("Chrome")) {
@@ -60,19 +73,19 @@ public class BaseClass {
             log.info("Chrome is Opened");
             WebDriverManager.chromedriver().setup();
 
-            driver = new ChromeDriver(opt);
+            driver = new ChromeDriver(options);
 
         } else if (browser.equalsIgnoreCase("firefox")) {
 
             log.info("Firefox is Opened");
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver(opt);
+            driver = new FirefoxDriver(options);
 
         } else if (browser.equalsIgnoreCase("Edge")) {
 
             log.info("Microsoft Edge is Opened");
             WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver(opt);
+            driver = new EdgeDriver(options);
 
         }
 
@@ -119,7 +132,7 @@ public class BaseClass {
 
     }
 
-    public String GetRandomSpecialCharacters() {
+    public static String GetRandomSpecialCharacters() {
 
         String Randspecchar = "!@#$%^&*()_+{}";
         StringBuilder salt = new StringBuilder();

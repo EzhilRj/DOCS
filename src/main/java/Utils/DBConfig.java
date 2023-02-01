@@ -1,6 +1,6 @@
 package Utils;
 
-import TestCases.BaseClass;
+import Scripts.BaseClass;
 import org.testng.Assert;
 
 import java.io.IOException;

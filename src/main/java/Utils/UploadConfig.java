@@ -1,6 +1,6 @@
 package Utils;
 
-import TestCases.BaseClass;
+import Scripts.BaseClass;
 import org.openqa.selenium.By;
 
 import java.awt.*;
