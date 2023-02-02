@@ -22,14 +22,14 @@ import static Utils.XLConfig.setExcelFile;
 public class UploadBandhuDocs_Test extends BaseClass {
 
 
-    @Test
+    @Test(priority = 1)
     public static void UploadbandhuDocsSheetsetter() throws IOException {
 
         setExcelFile(filepath, "UploadBandhuDocs");
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters() throws InterruptedException, IOException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -40,7 +40,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test
+    @Test(priority = 3)
     public void TC_002_Verify_EmployeenameTextBox_with_Numbers() throws InterruptedException, IOException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -51,7 +51,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test
+    @Test(priority = 4)
     public void TC_003_Verify_MobileNumberTextBox_with_Characters() throws InterruptedException, IOException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -62,7 +62,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test
+    @Test(priority = 5)
     public void TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters() throws InterruptedException, IOException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -74,7 +74,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
     }
 
 
-    @Test
+    @Test(priority = 6)
     public void TC_005_Verify_EmailID_With_InValidEmail() throws InterruptedException, IOException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -86,7 +86,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test
+    @Test(priority = 7)
     public void TC_006_Verify_User_is_Created() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -97,14 +97,15 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test(dependsOnMethods = {"TC_006_Verify_User_is_Created"})
+    @Test(priority = 8)
     public void TC_007_Verify_Userdata_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
+
 
         ConnectDB(xlcon.getCellData(9, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 9, 3);
 
     }
 
-    @Test
+    @Test(priority = 9)
     public void TC_008_Verify_ExporButton() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -116,7 +117,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test
+    @Test(priority = 10)
     public void TC_009_Verify_FileUpload() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -127,7 +128,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test
+    @Test(priority = 11)
     public void TC_010_Verify_UploadedData_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         ConnectDB(xlcon.getCellData(12, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);

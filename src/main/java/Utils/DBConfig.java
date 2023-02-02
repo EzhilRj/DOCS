@@ -6,6 +6,8 @@ import org.testng.Assert;
 import java.io.IOException;
 import java.sql.*;
 
+import static Utils.Constant.*;
+
 public class DBConfig extends BaseClass {
 
 
@@ -13,14 +15,9 @@ public class DBConfig extends BaseClass {
 
         Connection con = null;
 
-        String Databaseurl = "jdbc:sqlserver://183.83.187.133\\FIELDLYTICSDEVS:1433;DatabaseName=HRMS_ARVIND;encrypt=true;trustServerCertificate=true";
-        String Dbusername = "Fieldlytics2021";
-        String Dbpassword = "PPMSdevserver$2022";
-
-
         try{
 
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Class.forName(classname);
             con = DriverManager.getConnection(Databaseurl,Dbusername,Dbpassword);
 
             Statement statement = con.createStatement();

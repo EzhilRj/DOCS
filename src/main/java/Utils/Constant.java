@@ -17,5 +17,12 @@ public class Constant {
 
     public static final String Screenshotfilepath = System.getProperty("user.dir") + "/ScreenShots/";
 
+    public static final String Databaseurl = "jdbc:sqlserver://183.83.187.133\\FIELDLYTICSDEVS:1433;DatabaseName=HRMS_ARVIND;encrypt=true;trustServerCertificate=true";
+
+    public static final String Dbusername = "Fieldlytics2021";
+    public static final String Dbpassword = "PPMSdevserver$2022";
+
+    public static final String classname = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+
 
 }
