@@ -27,25 +27,16 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
+import static PageObjects.LoginPage.username;
+import static Utils.Constant.*;
+
 public class BaseClass {
 
     //Properties File Reading
     static ReadConfig readconfig = new ReadConfig();
-    public String browser = readconfig.GetBrowser();
-    public String Baseurl = readconfig.getapplicationURL();
-    public String downloadedpath = readconfig.GetdownloadFilepath();
-    public String uploadingpath = readconfig.Getuploadfilepath();
-
-    //TestData FilePath
-    public static String filepath = "./src/main/resources/Datas/DocsTestDatas.xls";
 
     //Log
    public Logger log = Logger.getLogger("BANDHUDOCSWEB");
-
-   //Login Credentials
-   final String username = "AJAZALI";
-   final String password = "AJAZALI@123";
-   final String company = "ARVIND";
 
     public static String excelfilepath = filepath;
 
@@ -54,9 +45,6 @@ public class BaseClass {
     public static WebDriver driver;
     long StartTime;
     long endTime;
-
-    String downloadinglocation = System.getProperty("user.dir")+"\\Downloads\\";
-    String Uploadinglocation = System.getProperty("user.dir")+"\\UploadingFiles\\";
 
     @BeforeSuite
     public void StartBrowser() throws InterruptedException, IOException {
@@ -68,20 +56,19 @@ public class BaseClass {
         options.setExperimentalOption("prefs",preferences);
 
         DOMConfigurator.configure("Log4J.xml");
-        if (browser.equalsIgnoreCase("Chrome")) {
+        if (readconfig.GetBrowser().equalsIgnoreCase("Chrome")) {
 
             log.info("Chrome is Opened");
             WebDriverManager.chromedriver().setup();
-
             driver = new ChromeDriver(options);
 
-        } else if (browser.equalsIgnoreCase("firefox")) {
+        } else if (readconfig.GetBrowser().equalsIgnoreCase("firefox")) {
 
             log.info("Firefox is Opened");
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver(options);
 
-        } else if (browser.equalsIgnoreCase("Edge")) {
+        } else if (readconfig.GetBrowser().equalsIgnoreCase("Edge")) {
 
             log.info("Microsoft Edge is Opened");
             WebDriverManager.edgedriver().setup();
@@ -90,11 +77,12 @@ public class BaseClass {
         }
 
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
-        driver.get(Baseurl);
-        log.info(Baseurl);
+        driver.get(readconfig.getapplicationURL());
+        log.info(readconfig.getapplicationURL());
         driver.manage().window().maximize();
         PageFactory.initElements(driver, LoginPage.class);
-        LoginPage.SetLoginCredentials(username,password,company);
+        LoginPage.SetLoginCredentials(Username,password,Company);
+
 
 
     }
@@ -116,7 +104,7 @@ public class BaseClass {
         if (result.getStatus() == ITestResult.FAILURE) {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE); // capture screenshot file
-            File target = new File(System.getProperty("user.dir") + "/ScreenShots/" + result.getName() + ".png");
+            File target = new File(Screenshotfilepath + result.getName() + ".png");
 
             FileUtils.copyFile(source, target);
         }
@@ -163,6 +151,22 @@ public class BaseClass {
         String randomString = sb.toString();
 
         return randomString;
+    }
+
+    public static boolean isFileDownloaded(String downloadPath, String fileName) {
+
+        boolean flag = false;
+        File dir = new File(downloadPath);
+        File[] dir_contents = dir.listFiles();
+
+        for (int i = 0; i < dir_contents.length; i++) {
+
+            if (dir_contents[i].getName().equals(fileName))
+
+                return flag=true;
+        }
+
+        return flag;
     }
 
 

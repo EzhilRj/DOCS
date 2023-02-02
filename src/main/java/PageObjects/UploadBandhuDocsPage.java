@@ -1,5 +1,6 @@
 package PageObjects;
 
+import Scripts.BaseClass;
 import Utils.DBConfig;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,12 +13,14 @@ import org.testng.Reporter;
 
 import javax.swing.*;
 
+import java.io.File;
 import java.io.IOException;
 
 import static Scripts.BaseClass.*;
+import static Utils.Constant.downloadinglocation;
 import static Utils.DBConfig.ConnectDB;
 
-public class UploadBandhuDocsPage {
+public class UploadBandhuDocsPage extends BaseClass {
 
     @FindBy(xpath = "//*[text()='Bandhu Process']")
     public static WebElement Bandhuprocess;
@@ -195,20 +198,44 @@ public class UploadBandhuDocsPage {
             xlcon.setCellValue(row,column,"TestCase Passed",excelfilepath);
             Assert.assertTrue(true);
 
-
-
         }else {
 
             xlcon.setCellValue(row,column,"TestCase Failed",excelfilepath);
             xlcon.setCellValue(6,4,"Cause : "+Errormsg.getText(),excelfilepath);
             Assert.assertTrue(false);
 
-
         }
-        
+
+    }
+
+    public static void ValidateDownloaded(int row , int column) throws IOException, InterruptedException {
+
+
+        boolean verifyfiledownload = isFileDownloaded(downloadinglocation,"UploadBandhuDocs.csv");
+
+        if(verifyfiledownload){
+
+            xlcon.setCellValue(row,column,"TestCase Passed",excelfilepath);
+            Assert.assertTrue(true, "Testcase Passed");
+            File f= new File (downloadinglocation+"UploadBandhuDocs.csv");
+            f.delete();
+
+
+        }else{
+
+            xlcon.setCellValue(row,column,"TestCase Failed",excelfilepath);
+            Assert.assertTrue(false, "Testcase failed");
+        }
+
+
 
     }
 
 
 
-}
+
+    }
+
+
+
+

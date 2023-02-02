@@ -5,31 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="doc project">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_ExporButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.10.24.09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.11.40.26.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.11.05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.22.33.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.24.41.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.28.56.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.34.23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.53.16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.55.19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.57.05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.57.50.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.58.36.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.01.18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.02.55.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.14.43.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.17.50.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.21.01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.22.17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.24.53.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.12.31.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.16.20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.18.12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.18.51.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.19.28.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_MobileNumberTextBox_with_Characters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_005_Verify_EmailID_With_InValidEmail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_User_is_Created.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_Userdata_is_Stored_in_Database.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/UploadbandhuDocsSheetsetter.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestCases/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestCases/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/ReadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/ReadConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/UploadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/UploadConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.01.25.20.19.12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.01.25.21.03.49.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.01.25.21.04.58.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.01.25.21.06.15.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,20 +78,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/SELENIUM&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/Automation Workspace/SELENIUM",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml">
     <configuration name="E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DOCS" />
@@ -193,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675074746545</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="doc project">
+      <created>1675263640007</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675263640007</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
