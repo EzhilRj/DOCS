@@ -4,38 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="doc project">
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_ExporButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.10.24.09.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.11.40.26.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.11.05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.22.33.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.24.41.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.28.56.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.34.23.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.53.16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.55.19.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.57.05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.57.50.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.12.58.36.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.01.18.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.02.55.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.14.43.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.17.50.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.21.01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.22.17.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.13.24.53.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.12.31.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.16.20.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.18.12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.18.51.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.02.14.19.28.html" afterDir="false" />
+    <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="Bandhu docs">
+      <change afterPath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/UploadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/UploadConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
     </list>
@@ -208,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675263640007</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bandhu docs">
+      <created>1675328123558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675328123558</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +210,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="doc project" />
-    <option name="LAST_COMMIT_MESSAGE" value="doc project" />
+    <MESSAGE value="Bandhu docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bandhu docs" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

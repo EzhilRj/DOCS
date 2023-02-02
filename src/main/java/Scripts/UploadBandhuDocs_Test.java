@@ -2,19 +2,20 @@ package Scripts;
 
 import PageObjects.LoginPage;
 import PageObjects.UploadBandhuDocsPage;
+import Utils.UploadConfig;
 import Utils.XLConfig;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Arrays;
 
 import static PageObjects.UploadBandhuDocsPage.ValidateDownloaded;
-import static Utils.Constant.downloadinglocation;
-import static Utils.Constant.filepath;
+import static Utils.Constant.*;
 import static Utils.DBConfig.ConnectDB;
 import static Utils.XLConfig.setExcelFile;
 
@@ -113,6 +114,23 @@ public class UploadBandhuDocs_Test extends BaseClass {
         ValidateDownloaded(10, 3);
 
 
+    }
+
+    @Test
+    public void TC_009_Verify_FileUpload() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadConfig.uploadfile(Uploadinglocation+"UploadBandhuDocs.csv");
+        UploadBandhuDocsPage.Uploadbutton();
+        UploadBandhuDocsPage.Validate("successfully uploaded.",11,3);
+
+    }
+
+    @Test
+    public void TC_010_Verify_UploadedData_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        ConnectDB(xlcon.getCellData(12, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);
 
     }
 

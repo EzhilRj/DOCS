@@ -87,7 +87,7 @@ public class BaseClass {
 
     }
 
-    @AfterSuite(enabled = true)
+    @AfterSuite(enabled = false)
     public void closebrowser() throws InterruptedException {
 
         driver.quit();

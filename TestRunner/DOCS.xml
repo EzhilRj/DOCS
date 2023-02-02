@@ -14,9 +14,11 @@
                     <include name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
                     <include name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
                     <include name = "TC_005_Verify_EmailID_With_InValidEmail"/>
-                    <exclude name = "TC_006_Verify_User_is_Created"/>
-                    <exclude name = "TC_007_Verify_Userdata_is_Stored_in_Database"/>
+                    <include name = "TC_006_Verify_User_is_Created"/>
+                    <include name = "TC_007_Verify_Userdata_is_Stored_in_Database"/>
                     <include name = "TC_008_Verify_ExporButton"/>
+                    <include name = "TC_009_Verify_FileUpload"/>
+                    <include name = "TC_010_Verify_UploadedData_is_Stored_in_Database"/>
                 </methods>
             </class>
         </classes>

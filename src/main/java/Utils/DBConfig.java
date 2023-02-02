@@ -9,7 +9,7 @@ import java.sql.*;
 public class DBConfig extends BaseClass {
 
 
-    public static void ConnectDB(String query, String empname,String Mobiile , String Email,int Row , int col) throws ClassNotFoundException, SQLException, SQLException, IOException {
+    public static void ConnectDB(String query, String empname,String Mobile , String Email,int Row , int col) throws ClassNotFoundException, SQLException, SQLException, IOException {
 
         Connection con = null;
 
@@ -28,18 +28,25 @@ public class DBConfig extends BaseClass {
 
             result.next();
             boolean employeename = result.getString("EmployeeName").equals(empname);
-            boolean Mno = result.getString("MobileNo").equals(Mobiile);
+            boolean Mno = result.getString("MobileNo").equals(Mobile);
             boolean mail = result.getString("Emailid").equals(Email);
 
             if(employeename==true&&Mno==true&&mail==true){
 
-                Assert.assertTrue(true);
                 xlcon.setCellValue(Row,col,"Testcase Passed",excelfilepath);
+                Assert.assertTrue(true);
+
+                Statement statement1 = con.createStatement();
+                statement1.executeUpdate("delete from Employeeinitiatedocs where MobileNo = "+ Mobile);
+                System.out.println("Delete Query Executed");
+
+
 
             }else{
 
                     Assert.assertTrue(false);
                     xlcon.setCellValue(Row,col,"Testcase Failed",excelfilepath);
+
 
             }
 
@@ -50,6 +57,7 @@ public class DBConfig extends BaseClass {
             xlcon.setCellValue(Row,col,"Testcase Failed",excelfilepath);
 
         }finally {
+
 
             if(con!=null){
 
