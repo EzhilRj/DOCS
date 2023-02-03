@@ -135,6 +135,19 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
+    @Test(priority = 11)
+    public void TC_011_Verify_UploadButton_Without_Selecting_File() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadBandhuDocsPage.Uploadbutton();
+        UploadBandhuDocsPage.Validate("csv file is required!",13,3);
+
+    }
+
+
+
 }
 
 

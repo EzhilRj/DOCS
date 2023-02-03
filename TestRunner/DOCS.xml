@@ -9,16 +9,17 @@
             <class name="Scripts.UploadBandhuDocs_Test">
                 <methods>
                     <include name = "UploadbandhuDocsSheetsetter"/>
-                    <include name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
-                    <include name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
-                    <include name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
-                    <include name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
-                    <include name = "TC_005_Verify_EmailID_With_InValidEmail"/>
-                    <include name = "TC_006_Verify_User_is_Created"/>
-                    <include name = "TC_007_Verify_Userdata_is_Stored_in_Database"/>
-                    <include name = "TC_008_Verify_ExporButton"/>
-                    <include name = "TC_009_Verify_FileUpload"/>
-                    <include name = "TC_010_Verify_UploadedData_is_Stored_in_Database"/>
+                    <exclude name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
+                    <exclude name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
+                    <exclude name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
+                    <exclude name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
+                    <exclude name = "TC_005_Verify_EmailID_With_InValidEmail"/>
+                    <exclude name = "TC_006_Verify_User_is_Created"/>
+                    <exclude name = "TC_007_Verify_Userdata_is_Stored_in_Database"/>
+                    <exclude name = "TC_008_Verify_ExporButton"/>
+                    <exclude name = "TC_009_Verify_FileUpload"/>
+                    <exclude name = "TC_010_Verify_UploadedData_is_Stored_in_Database"/>
+                    <include name = "TC_011_Verify_UploadButton_Without_Selecting_File"/>
                 </methods>
             </class>
         </classes>
