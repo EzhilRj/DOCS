@@ -161,6 +161,25 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
+    @Test(priority = 14)
+    public void TC_013_Verify_with_EmptyExcel() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadConfig.uploadfile(Uploadinglocation+"EmptyUploadBandhuDocs.csv");
+        UploadBandhuDocsPage.Uploadbutton();
+
+    }
+
+    @Test(priority = 15)
+    public void TC_014_Verify_TextBoxErrorMessages() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+
+        UploadBandhuDocsPage.savebutton();
+    }
+
 }
 
     
