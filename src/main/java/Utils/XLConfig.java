@@ -10,11 +10,11 @@ import java.io.IOException;
 
 public class XLConfig {
 
-    private static HSSFWorkbook workbook;
-    private static HSSFSheet sheet;
-    private static HSSFRow row;
-    private static HSSFCell cell;
-    public static HSSFCellStyle style;
+    private static XSSFWorkbook workbook;
+    private static XSSFSheet sheet;
+    private static XSSFRow row;
+    private static XSSFCell cell;
+    public static XSSFCellStyle style;
 
     public static void setExcelFile(String excelFilePath, String sheetName) throws IOException {
 
@@ -25,7 +25,7 @@ public class XLConfig {
         FileInputStream inputStream = new FileInputStream(file);
 
         //creating workbook instance that refers to .xls file
-        workbook=new HSSFWorkbook(inputStream);
+        workbook=new XSSFWorkbook(inputStream);
 
         //creating a Sheet object
         sheet=workbook.getSheet(sheetName);
@@ -47,7 +47,6 @@ public class XLConfig {
 
     public void setCellValue(int rowNum,int cellNum,String cellValue,String excelFilePath) throws IOException {
         //creating a new cell in row and setting value to it
-
 
             sheet.getRow(rowNum).createCell(cellNum).setCellValue(cellValue);
 

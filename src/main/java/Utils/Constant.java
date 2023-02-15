@@ -13,7 +13,7 @@ public class Constant {
 
     public static  final String Uploadinglocation = System.getProperty("user.dir")+"\\Uploads\\";
 
-    public static final String filepath = "./src/main/resources/Datas/DocsTestDatas.xls";
+    public static final String filepath = "./src/main/resources/Datas/DocsTestDatas.xlsx";
 
     public static final String Screenshotfilepath = System.getProperty("user.dir") + "/ScreenShots/";
 

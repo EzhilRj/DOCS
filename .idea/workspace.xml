@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="Bandhu docs">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Downloads/UploadBandhuDocs (1).csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_MobileNumberTextBox_with_Characters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_005_Verify_EmailID_With_InValidEmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_ExporButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_012_Verify_Duplicate_Mobileno_EmailID.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_User_is_Created.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_User_is_Created.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_011_Verify_UploadButton_Without_Selecting_File.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_011_Verify_UploadButton_Without_Selecting_File.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.03.16.00.43.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.03.17.46.23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.03.17.58.31.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.03.17.59.45.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.03.18.00.30.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +59,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Hzn1mDQ274j7S9aym01PZ97xhw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -57,55 +75,61 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/SELENIUM&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/DOCS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;,
+      &quot;sqlserver.localdb&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Scripts" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml">
+    <configuration name="For_Loop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="For_Loop" />
+      <module name="DOCS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="forloopexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="forloopexample" />
+      <module name="DOCS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DOCS" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestRunner/DOCS.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UploadBandhuDocs_Test.TC_001_Verify_EmployeenameTextBox_is_allow_SpecialCharacters" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DOCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Scripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="Scripts.UploadBandhuDocs_Test" />
-      <option name="METHOD_NAME" value="TC_001_Verify_EmployeenameTextBox_is_allow_SpecialCharacters" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UploadBandhuDocs_Test.TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DOCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Scripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="Scripts.UploadBandhuDocs_Test" />
-      <option name="METHOD_NAME" value="TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -151,12 +175,15 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" />
+        <item itemvalue="Application.forloopexample" />
+        <item itemvalue="Application.For_Loop" />
         <item itemvalue="TestNG.UploadBandhuDocs_Test.UploadbandhuDocsSheetsetter" />
         <item itemvalue="TestNG.UploadBandhuDocs_Test.TC_005_Verify_EmailID_With_ValidEmail" />
-        <item itemvalue="TestNG.UploadBandhuDocs_Test.TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters" />
-        <item itemvalue="TestNG.UploadBandhuDocs_Test.TC_001_Verify_EmployeenameTextBox_is_allow_SpecialCharacters" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastUrl" value="http://devnewhrms.ppms.co.in/BandhuHR/bandhu_docsAudit.aspx" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -166,6 +193,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669296567284</updated>
+      <workItem from="1676273113077" duration="171000" />
+      <workItem from="1676273301786" duration="52000" />
+      <workItem from="1676273369273" duration="768000" />
+      <workItem from="1676277633258" duration="394000" />
+      <workItem from="1676278044161" duration="353000" />
+      <workItem from="1676278417983" duration="203000" />
+      <workItem from="1676278645401" duration="54000" />
+      <workItem from="1676279651710" duration="212000" />
+      <workItem from="1676279882427" duration="2313000" />
     </task>
     <task id="LOCAL-00001" summary="doc project">
       <created>1675074746545</created>
@@ -202,8 +238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1675347166231</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bandhu docs">
+      <created>1675435735070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675435735070</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

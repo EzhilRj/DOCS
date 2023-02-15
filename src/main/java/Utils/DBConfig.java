@@ -41,17 +41,19 @@ public class DBConfig extends BaseClass {
 
             }else{
 
-                    Assert.assertTrue(false);
                     xlcon.setCellValue(Row,col,"Testcase Failed",excelfilepath);
+                    Assert.assertTrue(false);
+
 
 
             }
 
         }catch (Exception e){
 
+            xlcon.setCellValue(Row,col,"Testcase Failed",excelfilepath);
             System.out.println(e.getMessage());
             Assert.assertTrue(false);
-            xlcon.setCellValue(Row,col,"Testcase Failed",excelfilepath);
+
 
         }finally {
 

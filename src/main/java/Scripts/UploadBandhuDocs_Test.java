@@ -105,7 +105,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test(priority = 9)
+    @Test(priority = 10)
     public void TC_008_Verify_ExporButton() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -117,7 +117,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test(priority = 10)
+    @Test(priority = 11)
     public void TC_009_Verify_FileUpload() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
@@ -128,26 +128,40 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
-    @Test(priority = 11)
+    @Test(priority = 12)
     public void TC_010_Verify_UploadedData_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         ConnectDB(xlcon.getCellData(12, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);
 
     }
 
-    @Test(priority = 11)
+    @Test(priority = 13)
     public void TC_011_Verify_UploadButton_Without_Selecting_File() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.Uploadbutton();
-        UploadBandhuDocsPage.Validate("csv file is required!",13,3);
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(13,2),13,3);
+
+    }
+
+    @Test(priority = 9)
+    public void TC_012_Verify_Duplicate_Mobileno_EmailID() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadBandhuDocsPage.SetCredentials(xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1));
+        UploadBandhuDocsPage.savebutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(14,2),14,3);
+        UploadBandhuDocsPage.Mobileno.clear();
+        UploadBandhuDocsPage.Mobileno.sendKeys("6383421429");
+        UploadBandhuDocsPage.savebutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(15,2),15,3);
 
     }
 
 
-
 }
 
-
+    
