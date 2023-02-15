@@ -33,6 +33,7 @@ public class DBConfig extends BaseClass {
                 xlcon.setCellValue(Row,col,"Testcase Passed",excelfilepath);
                 Assert.assertTrue(true);
 
+                Thread.sleep(1000);
                 Statement statement1 = con.createStatement();
                 statement1.executeUpdate("delete from Employeeinitiatedocs where MobileNo = "+ Mobile);
                 System.out.println("Delete Query Executed");

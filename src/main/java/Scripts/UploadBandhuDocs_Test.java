@@ -98,56 +98,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
     }
 
     @Test(priority = 8)
-    public void TC_007_Verify_Userdata_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
-
-
-        ConnectDB(xlcon.getCellData(9, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 9, 3);
-
-    }
-
-    @Test(priority = 10)
-    public void TC_008_Verify_ExporButton() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
-
-        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
-        UploadBandhuDocsPage.ExportButton();
-        Thread.sleep(1000);
-        ValidateDownloaded(10, 3);
-
-
-    }
-
-    @Test(priority = 11)
-    public void TC_009_Verify_FileUpload() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
-
-        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
-        UploadConfig.uploadfile(Uploadinglocation+"UploadBandhuDocs.csv");
-        UploadBandhuDocsPage.Uploadbutton();
-        UploadBandhuDocsPage.Validate("successfully uploaded.",11,3);
-
-    }
-
-    @Test(priority = 12)
-    public void TC_010_Verify_UploadedData_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
-
-        ConnectDB(xlcon.getCellData(12, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);
-
-    }
-
-    @Test(priority = 13)
-    public void TC_011_Verify_UploadButton_Without_Selecting_File() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
-
-
-        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
-        UploadBandhuDocsPage.Uploadbutton();
-        UploadBandhuDocsPage.Validate(xlcon.getCellData(13,2),13,3);
-
-    }
-
-    @Test(priority = 9)
-    public void TC_012_Verify_Duplicate_Mobileno_EmailID() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+    public void TC_007_Verify_Duplicate_Mobileno_EmailID() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
@@ -161,6 +112,54 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
     }
 
+    @Test(priority = 9)
+    public void TC_008_Verify_Userdata_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
+
+        ConnectDB(xlcon.getCellData(9, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 9, 3);
+
+    }
+
+
+
+    @Test(priority = 10)
+    public void TC_009_Verify_FileUpload() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadConfig.uploadfile(Uploadinglocation+"UploadBandhuDocs.csv");
+        UploadBandhuDocsPage.Uploadbutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(11,2),11,3);
+
+    }
+
+    @Test(priority = 11)
+    public void TC_010_Verify_UploadedData_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+        ConnectDB(xlcon.getCellData(12, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);
+
+    }
+
+    @Test(priority = 12)
+    public void TC_011_Verify_ExporButton() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadBandhuDocsPage.ExportButton();
+        Thread.sleep(1000);
+        ValidateDownloaded(10, 3);
+
+    }
+
+    @Test(priority = 13)
+    public void TC_012_Verify_UploadButton_Without_Selecting_File() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
+
+
+        PageFactory.initElements(driver, UploadBandhuDocsPage.class);
+        UploadBandhuDocsPage.clickModule();
+        UploadBandhuDocsPage.Uploadbutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(13,2),13,3);
+
+    }
 
 }
 
