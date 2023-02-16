@@ -7,7 +7,7 @@
     <test name="UploadBandhuDocsTest">
         <classes>
             <class name="Scripts.UploadBandhuDocs_Test">
-                <methods>
+              <!--  <methods>
                     <include name = "UploadbandhuDocsSheetsetter"/>
                     <exclude name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
                     <exclude name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
@@ -23,7 +23,7 @@
                     <exclude name = "TC_012_Verify_UploadButton_Without_Selecting_File"/>
                     <exclude name = "TC_013_Verify_with_EmptyExcel"/>
                     <include name = "TC_014_Verify_TextBoxErrorMessages"/>
-                </methods>
+                </methods>-->
             </class>
         </classes>
     </test>

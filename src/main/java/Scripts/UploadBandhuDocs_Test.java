@@ -12,12 +12,14 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import static PageObjects.UploadBandhuDocsPage.ValidateDownloaded;
 import static Utils.Constant.*;
 import static Utils.DBConfig.ConnectDB;
 import static Utils.XLConfig.setExcelFile;
+import static Utils.XLConfig.style;
 
 public class UploadBandhuDocs_Test extends BaseClass {
 
@@ -26,6 +28,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
     public static void UploadbandhuDocsSheetsetter() throws IOException {
 
         setExcelFile(filepath, "UploadBandhuDocs");
+
 
     }
 
@@ -176,8 +179,15 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
-
         UploadBandhuDocsPage.savebutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(17,2),17,3);
+        UploadBandhuDocsPage.SetCredentials(xlcon.getCellData(6, 1),"","");
+        UploadBandhuDocsPage.savebutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(18,2),18,3);
+        UploadBandhuDocsPage.SetCredentials("",xlcon.getCellData(7, 1),"");
+        UploadBandhuDocsPage.savebutton();
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(19,2),19,3);
+
     }
 
 }
