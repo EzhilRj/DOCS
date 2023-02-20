@@ -26,7 +26,6 @@ public class XLConfig {
 
         //creating workbook instance that refers to .xls file
         workbook=new XSSFWorkbook(inputStream);
-
         //creating a Sheet object
         sheet=workbook.getSheet(sheetName);
 

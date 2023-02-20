@@ -5,20 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="Bandhu docs">
-      <change afterPath="$PROJECT_DIR$/Downloads/UploadBandhuDocs (3).csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_014_Verify_TextBoxErrorMessages.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_BandhuDocs_PageTitle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Employee_DataisShowing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/Verify_BandhuDocs_PageTitle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.04.26.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.05.07.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_MobileNumberTextBox_with_Characters.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_005_Verify_EmailID_With_InValidEmail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_User_is_Created.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_Duplicate_Mobileno_EmailID.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_Userdata_is_Stored_in_Database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_ExporButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_Userdata_is_Stored_in_Database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_009_Verify_FileUpload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_010_Verify_UploadedData_is_Stored_in_Database.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_011_Verify_ExporButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_011_Verify_UploadButton_Without_Selecting_File.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_012_Verify_Duplicate_Mobileno_EmailID.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_012_Verify_UploadButton_Without_Selecting_File.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_013_Verify_with_EmptyExcel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_014_Verify_TextBoxErrorMessages.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.15.17.55.23.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.15.17.56.25.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.16.12.14.10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.15.19.59.14.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.15.20.03.37.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.15.20.14.58.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.16.12.14.10.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +67,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/guicedee/services/apache-poi-ooxml/62/apache-poi-ooxml-62-sources.jar!/org/apache/poi/xssf/usermodel/XSSFCell.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/4.1.3/selenium-remote-driver-4.1.3-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/4.1.3/selenium-support-4.1.3-sources.jar!/org/openqa/selenium/support/PageFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,7 +84,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Hzn1mDQ274j7S9aym01PZ97xhw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -79,6 +101,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/DOCS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -88,7 +111,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -120,6 +143,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BandhuDocs_Test.Verify_BandhuDocs_PageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DOCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scripts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scripts" />
+      <option name="MAIN_CLASS_NAME" value="Scripts.BandhuDocs_Test" />
+      <option name="METHOD_NAME" value="Verify_BandhuDocs_PageTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DOCS" />
       <shortenClasspath name="NONE" />
@@ -133,24 +174,6 @@
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UploadBandhuDocs_Test.TC_005_Verify_EmailID_With_ValidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DOCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Scripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="Scripts.UploadBandhuDocs_Test" />
-      <option name="METHOD_NAME" value="TC_005_Verify_EmailID_With_ValidEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -178,10 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" />
+        <item itemvalue="TestNG.BandhuDocs_Test.Verify_BandhuDocs_PageTitle" />
         <item itemvalue="Application.forloopexample" />
         <item itemvalue="Application.For_Loop" />
         <item itemvalue="TestNG.UploadBandhuDocs_Test.UploadbandhuDocsSheetsetter" />
-        <item itemvalue="TestNG.UploadBandhuDocs_Test.TC_005_Verify_EmailID_With_ValidEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676472618168</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Bandhu docs">
+      <created>1676532683886</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676532683886</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
