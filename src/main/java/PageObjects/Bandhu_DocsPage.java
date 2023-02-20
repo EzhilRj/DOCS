@@ -1,10 +1,18 @@
 package PageObjects;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
 import java.io.IOException;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
+import java.util.List;
 
 import static Scripts.BaseClass.*;
 
@@ -148,18 +156,56 @@ public class Bandhu_DocsPage {
         BandhuDocs.click();
     }
 
-    public static void Validatedata(int setrow , int setcell) throws IOException {
+    public String Getuniqeid(){
+        return uniqueID.getText();
+    }
+
+    public String GetEmpname(){
+        return Empname.getText();
+    }
+
+    public String GetEmailID(){
+        return EmailId.getText();
+    }
+
+    public void View(){
+         Eye.click();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void Validatedata(int setrow, int setcell) throws IOException {
 
         boolean ui = uniqueID.isDisplayed();
-        boolean en =  Empname.isDisplayed();
+        boolean en = Empname.isDisplayed();
         boolean ei = EmailId.isDisplayed();
 
-        if(ui==true&&en==true&&ei==true){
+        if (ui == true && en == true && ei == true) {
 
-            xlcon.setCellValue(setrow,setcell,"TestCase Passed",excelfilepath);
+            xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
             Assert.assertTrue(true);
-        }else{
-            xlcon.setCellValue(setrow,setcell,"TestCase Failed",excelfilepath);
+        } else {
+            xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
             Assert.assertTrue(false);
 
         }
@@ -167,49 +213,95 @@ public class Bandhu_DocsPage {
     }
 
 
-    public static void Validatetitle(int getrow, int getcell , int setrow , int setcell) throws IOException {
+    public static void Validatetitle(int getrow, int getcell, int setrow, int setcell) throws IOException {
 
-        if( driver.getCurrentUrl().contains(xlcon.getCellData(getrow,getcell))){
+        if (driver.getCurrentUrl().contains(xlcon.getCellData(getrow, getcell))) {
 
-            xlcon.setCellValue(setrow,setcell,"TestCase Passed",excelfilepath);
+            xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
             Assert.assertTrue(true);
 
-        }else{
+        } else {
 
-            xlcon.setCellValue(setrow,setcell,"TestCase Failed",excelfilepath);
+            xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
             Assert.assertTrue(false);
 
         }
     }
 
-    public static void ValidateAuditscreen(int setrow , int setcell) throws IOException {
+    public static void ValidateAuditscreen(int value, int setrow, int setcell) throws IOException {
 
-        if(Auditscreen.isDisplayed()){
+        if (value == 1) {
 
-            xlcon.setCellValue(setrow,setcell,"TestCase Passed",excelfilepath);
-            Assert.assertTrue(true);
+            if (Auditscreen.isDisplayed()) {
 
-        }else {
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
 
-            xlcon.setCellValue(setrow,setcell,"TestCase Failed",excelfilepath);
-            Assert.assertTrue(false);
+            } else {
 
+                xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
+                Assert.assertTrue(false);
+
+            }
+        } else if (value == 2) {
+
+            if (
+                    Bandhu_DocsPage.uniqueid1.getAttribute("readonly") == null && Bandhu_DocsPage.Empname1.getAttribute("readonly") == null && Bandhu_DocsPage.mobno.getAttribute("readonly") == null && Bandhu_DocsPage.Emailid1.getAttribute("readonly") == null) {
+
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
+
+            } else {
+
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
+
+            }
+
+        } else if (value == 3) {
+
+            try {
+                int invalidImageCount = 0;
+                List<WebElement> imagesList = driver.findElements(By.tagName("img"));
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
+                for (WebElement imgElement : imagesList) {
+                    if (imgElement != null) {
+                        verifyimageActive(imgElement);
+                    }
+                }
+                System.out.println("Total no. of invalid images are " + invalidImageCount);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println(e.getMessage());
+            }
         }
-
     }
+
+
+    public static void verifyimageActive(WebElement imgElement) {
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpGet request = new HttpGet(imgElement.getAttribute("src"));
+            HttpResponse response = client.execute(request);
+            // verifying response code he HttpStatus should be 200 if not,
+            // increment as invalid images count
+            int invalidImageCount = 0;
+            if (response.getStatusLine().getStatusCode() != 200)
+                invalidImageCount++;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public static void scrollPageDown(WebDriver driver) {
+        JavascriptExecutor js = ((JavascriptExecutor) driver);
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -5,38 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="Bandhu docs">
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_BandhuDocs_PageTitle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Employee_DataisShowing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/Verify_BandhuDocs_PageTitle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.04.26.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.05.07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_Aadhardetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.10.18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.21.13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.22.27.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.22.47.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.13.50.07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.13.51.13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.33.04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.38.10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.45.42.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.52.15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.17.59.12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.00.16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.12.30.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.23.30.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.25.56.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.32.28.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.33.28.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.37.03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.37.38.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.38.06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.40.21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.48.55.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.49.57.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.51.49.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.52.49.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.53.49.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.56.07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.58.06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.13.58.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.15.10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.20.37.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.22.18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.27.53.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.28.36.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.30.35.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.33.04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.35.13.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_MobileNumberTextBox_with_Characters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_005_Verify_EmailID_With_InValidEmail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_User_is_Created.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_Duplicate_Mobileno_EmailID.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_Userdata_is_Stored_in_Database.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_ExporButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_Userdata_is_Stored_in_Database.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_009_Verify_FileUpload.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_010_Verify_UploadedData_is_Stored_in_Database.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_011_Verify_ExporButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_011_Verify_UploadButton_Without_Selecting_File.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_012_Verify_Duplicate_Mobileno_EmailID.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_012_Verify_UploadButton_Without_Selecting_File.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_013_Verify_with_EmptyExcel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_014_Verify_TextBoxErrorMessages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.16.12.14.10.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +125,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -139,6 +153,24 @@
     <configuration name="forloopexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="forloopexample" />
       <module name="DOCS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BandhuDocs_Test.TC_004_Verify_AuditScreen_Fiedls_Readonly" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DOCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scripts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Scripts" />
+      <option name="MAIN_CLASS_NAME" value="Scripts.BandhuDocs_Test" />
+      <option name="METHOD_NAME" value="TC_004_Verify_AuditScreen_Fiedls_Readonly" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,31 +212,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UploadBandhuDocs_Test.UploadbandhuDocsSheetsetter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DOCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Scripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="Scripts.UploadBandhuDocs_Test" />
-      <option name="METHOD_NAME" value="UploadbandhuDocsSheetsetter" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" />
+        <item itemvalue="TestNG.BandhuDocs_Test.TC_004_Verify_AuditScreen_Fiedls_Readonly" />
         <item itemvalue="TestNG.BandhuDocs_Test.Verify_BandhuDocs_PageTitle" />
         <item itemvalue="Application.forloopexample" />
         <item itemvalue="Application.For_Loop" />
-        <item itemvalue="TestNG.UploadBandhuDocs_Test.UploadbandhuDocsSheetsetter" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676532683886</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Bandhu docs">
+      <created>1676876221337</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676876221338</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

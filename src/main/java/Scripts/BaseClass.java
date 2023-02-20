@@ -7,6 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -82,8 +83,6 @@ public class BaseClass {
         driver.manage().window().maximize();
         PageFactory.initElements(driver, LoginPage.class);
         LoginPage.SetLoginCredentials(Username,password,Company);
-
-
 
     }
 
