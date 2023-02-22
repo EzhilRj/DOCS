@@ -28,7 +28,7 @@
             <class name="Scripts.BandhuDocs_Test">
                 <methods>
                     <include name = "BandhuDocsSheetSetter"/>
-                    <exclude name = "TC_001_Verify_BandhuDocs_PageTitle"/>
+                    <include name = "TC_001_Verify_BandhuDocs_PageTitle"/>
                     <include name = "TC_002_Employee_DataisShowing"/>
                     <include name = "TC_003_Verify_AuditScreen_is_Showing"/>
                     <include name = "TC_004_Verify_AuditScreen_Fiedls_Readonly"/>

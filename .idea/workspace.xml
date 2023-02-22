@@ -5,52 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="Bandhu docs">
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_Aadhardetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.10.18.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.21.13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.22.27.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.22.47.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.13.50.07.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.13.51.13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.33.04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.38.10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.45.42.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.52.15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.17.59.12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.00.16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.12.30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.23.30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.25.56.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.32.28.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.33.28.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.37.03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.37.38.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.38.06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.40.21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.48.55.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.49.57.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.51.49.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.52.49.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.53.49.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.56.07.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.58.06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.13.58.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.15.10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.20.37.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.22.18.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.27.53.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.28.36.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.30.35.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.33.04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.35.13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.21.11.19.50.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.21.13.29.15.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_BandhuDocs_PageTitle.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_BandhuDocs_PageTitle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_002_Employee_DataisShowing.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Employee_DataisShowing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_AuditScreen_is_Showing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_Aadhardetails.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/Verify_BandhuDocs_PageTitle.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.04.26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.05.07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.10.18.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.48.40.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.21.13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.22.27.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.49.42.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.12.22.47.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.13.50.07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.13.51.13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.33.04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.38.10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.45.42.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.14.52.15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.17.59.12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.00.16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.12.30.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.23.30.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.25.56.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.43.08.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.32.28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.33.28.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.44.18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.37.03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.37.38.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.38.06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.40.21.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.13.43.01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.48.55.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.49.57.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.45.37.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.51.49.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.59.57.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.52.49.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.12.50.44.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.53.49.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.56.07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.18.58.06.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.13.43.53.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.13.58.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.15.10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.20.37.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.22.18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.27.53.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.28.36.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.30.35.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.33.04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.20.19.35.13.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,33 +116,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/DOCS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "E:/Automation Workspace/DOCS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;,
-      &quot;sqlserver.localdb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Scripts" />
@@ -320,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676876221338</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Bandhu docs">
+      <created>1676904577724</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676904577724</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

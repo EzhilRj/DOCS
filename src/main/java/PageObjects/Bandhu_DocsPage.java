@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.io.IOException;
@@ -67,7 +68,7 @@ public class Bandhu_DocsPage {
     public static WebElement Bankaccno;
 
     @FindBy(id = "txt_ifsccode")
-    public static WebElement IFSC;
+    public static WebElement IFSC1;
 
     @FindBy(id = "BtnApproveId")
     public static WebElement Approvebutton;
@@ -79,7 +80,7 @@ public class Bandhu_DocsPage {
     public static WebElement Remarks;
 
     @FindBy(className = "close")
-    public static WebElement close;
+    public static WebElement Closebutton1;
 
     @FindBy(id = "txt_DivisonName")
     public static WebElement division;
@@ -135,7 +136,7 @@ public class Bandhu_DocsPage {
     public static WebElement bankAcno;
 
     @FindBy(id = "txt_IFSC_Code")
-    public static WebElement ifsc;
+    public static WebElement ifsc2;
 
     @FindBy(id = "txt_BankProof")
     public static WebElement bankproof;
@@ -147,10 +148,10 @@ public class Bandhu_DocsPage {
     public static WebElement Obinitiate;
 
     @FindBy(xpath = "//*[text()='Close']")
-    public static WebElement Closebutton;
+    public static WebElement Closebutton2;
 
-
-    public static void Clickmodule() {
+    //Events
+    public static void BandhuProcess() {
 
         Bandhuprocess.click();
         BandhuDocs.click();
@@ -168,32 +169,165 @@ public class Bandhu_DocsPage {
         return EmailId.getText();
     }
 
-    public void View(){
-         Eye.click();
+    public static void View(){
+        Eye.click();
     }
 
+    public boolean Auditscreen(){
+        return Auditscreen.isDisplayed();
+    }
 
+    public String Getuniqueid1(){
+        return uniqueid1.getText();
+    }
 
+    public String GetEmpname1(){
+        return Empname1.getText();
+    }
 
+    public String GetMobno(){
+        return mobno.getText();
+    }
 
+    public String GetEmailID1(){
+        return Emailid1.getText();
+    }
 
+    public void Aadharimg(){
+        Aadharimage.click();
+    }
 
+    public String getAadharNo(){
+        return Aadharno.getText();
+    }
 
+    public void Bankimg(){
+        bankImage.click();
+    }
 
+    public String GetBankaccno(){
+        return Bankaccno.getText();
+    }
 
+    public String GetIFSC1(){
+        return IFSC1.getText();
+    }
 
+    public void Approve(){
+        Approvebutton.click();
+    }
 
+    public void Reject(){
+        RejectbUtton.click();
+    }
 
+    public void Remarks(String remarks){
+        Remarks.sendKeys(remarks);
+    }
 
+    public static void Close1(){
+        Closebutton1.click();
+    }
 
+    public void SetDivision(String divisionname){
+        Select div = new Select(division);
+        div.selectByVisibleText(divisionname);
+    }
 
+    public void SetTown(String town){
+        Select tow = new Select(TownName);
+        tow.selectByVisibleText(town);
+    }
 
+    public void Setbranch(String branch){
+        Select branc = new Select(Branchname);
+        branc.selectByVisibleText(branch);
+    }
 
+    public void Setstate(String state){
+        Select sta = new Select(statename);
+        sta.selectByVisibleText(state);
+    }
 
+    public void SetRm1(String rm1){
+        Select reportingmanager1 = new Select(Rm1);
+        reportingmanager1.selectByVisibleText(rm1);
+    }
 
+    public void SetRm2(String rm2){
+        Select reportingmanager2 = new Select(Rm2);
+        reportingmanager2.selectByVisibleText(rm2);
+    }
 
+    public void SetDesignation(String Designation){
+        Select design = new Select(Desig);
+        design.selectByVisibleText(Designation);
+    }
 
+    public void SetCategory(String category){
+        Select cat = new Select(EmpCate);
+        cat.selectByVisibleText(category);
+    }
 
+    public void Setclientbranch(String clientbranch){
+        Select sc = new Select(ClientBranch);
+        sc.selectByVisibleText(clientbranch);
+    }
+
+    public void SETDOJ(String doj){
+
+        DOJ.sendKeys(doj);
+    }
+
+    public void SETDOB(String dob){
+        DOB.sendKeys(dob);
+    }
+
+    public String getAadhar(){
+
+        return aadharno.getText();
+    }
+
+    public String GetCandidatename(){
+
+        return Candname.getText();
+    }
+
+    public String GetEmail(){
+
+        return Email.getText();
+    }
+
+    public String GetMobNo(){
+
+        return Mno.getText();
+    }
+
+    public String GetBankAccno(){
+
+        return bankAcno.getText();
+    }
+
+    public String GetIFSC2(){
+
+        return ifsc2.getText();
+    }
+
+    public void Resume(){
+        Resume.click();
+    }
+
+    public void initiate(){
+
+        Obinitiate.click();
+    }
+
+    public void Close2(){
+
+        Closebutton2.click();
+    }
+
+    //Validations
     public static void Validatedata(int setrow, int setcell) throws IOException {
 
         boolean ui = uniqueID.isDisplayed();

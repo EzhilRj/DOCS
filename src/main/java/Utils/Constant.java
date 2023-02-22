@@ -7,7 +7,7 @@ public class Constant {
 
     public static final String password = "AJAZALI@123";
 
-    public static final String Company = "ARVIND";
+    public static final String Company = "arvind";
 
     public static  final String downloadinglocation = System.getProperty("user.dir")+"\\Downloads\\";
 

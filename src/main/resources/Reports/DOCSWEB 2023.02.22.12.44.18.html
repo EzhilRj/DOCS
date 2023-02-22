@@ -40,7 +40,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>20-Feb-2023, 12:05:07 pm</span>
+				<span class='label suite-start-time'>22-Feb-2023, 12:44:18 pm</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.1</span>
@@ -63,6 +63,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -113,10 +114,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>2</span> test(s) passed</span>
+					<span><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>1</span> test(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>1</span> test(s) failed, <span class='strong'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -128,10 +129,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>2</span> step(s) passed</span>
+					<span><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> step(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>2</span> step(s) failed, <span class='strong'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -149,14 +150,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>BandhuDocsSheetSetter</span>
-						<span class='test-time'>20-Feb-2023, 12:05:08 pm</span>
+						<span class='test-time'>22-Feb-2023, 12:44:19 pm</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>20-Feb-2023, 12:05:08 pm</span>
-	<span class='label end-time'>20-Feb-2023, 12:05:08 pm</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+	<span class='label start-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label end-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -170,7 +171,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:05:08 pm</td>
+					<td class='timestamp'>12:44:19 pm</td>
 					<td class='step-details'><span class='label white-text green'>BandhuDocsSheetSetter</span></td>
 				</tr>
 			</tbody>
@@ -180,16 +181,58 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>TC_002_Employee_DataisShowing</span>
-						<span class='test-time'>20-Feb-2023, 12:05:10 pm</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>22-Feb-2023, 12:44:19 pm</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>20-Feb-2023, 12:05:10 pm</span>
-	<span class='label end-time'>20-Feb-2023, 12:05:10 pm</span>
+	<span class='label start-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label end-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+6ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:44:19 pm</td>
+					<td class='step-details'><span class='label white-text red'>TC_002_Employee_DataisShowing</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:44:19 pm</td>
+					<td class='step-details'>Screenshot is below:com.aventstack.extentreports.ExtentTest@124d26ba</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='E:\Automation Workspace\DOCS\ScreenShots\TC_002_Employee_DataisShowing.png' width='10%' src='' data-src='E:\Automation Workspace\DOCS\ScreenShots\TC_002_Employee_DataisShowing.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_003_Verify_AuditScreen_is_Showing</span>
+						<span class='test-time'>22-Feb-2023, 12:44:19 pm</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label end-time'>22-Feb-2023, 12:44:19 pm</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -202,10 +245,10 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:05:10 pm</td>
-					<td class='step-details'><span class='label white-text green'>TC_002_Employee_DataisShowing</span></td>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>12:44:19 pm</td>
+					<td class='step-details'><span class='label white-text orange'>TC_003_Verify_AuditScreen_is_Showing</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -214,16 +257,16 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>TC_003_Verify_AuditScreen_is_Showing</span>
-						<span class='test-time'>20-Feb-2023, 12:05:25 pm</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>TC_004_Verify_AuditScreen_Fiedls_Readonly</span>
+						<span class='test-time'>22-Feb-2023, 12:44:19 pm</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>20-Feb-2023, 12:05:25 pm</span>
-	<span class='label end-time'>20-Feb-2023, 12:05:25 pm</span>
+	<span class='label start-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label end-time'>22-Feb-2023, 12:44:19 pm</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-steps'>
@@ -236,22 +279,82 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:05:25 pm</td>
-					<td class='step-details'><span class='label white-text red'>TC_003_Verify_AuditScreen_is_Showing</span></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:05:25 pm</td>
-					<td class='step-details'>Screenshot is below:com.aventstack.extentreports.ExtentTest@329dc214</td>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>12:44:19 pm</td>
+					<td class='step-details'><span class='label white-text orange'>TC_004_Verify_AuditScreen_Fiedls_Readonly</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='E:\Automation Workspace\DOCS\ScreenShots\TC_003_Verify_AuditScreen_is_Showing.png' width='10%' src='' data-src='E:\Automation Workspace\DOCS\ScreenShots\TC_003_Verify_AuditScreen_is_Showing.png'></li>
-							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_005_Verify_Images</span>
+						<span class='test-time'>22-Feb-2023, 12:44:19 pm</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label end-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>12:44:19 pm</td>
+					<td class='step-details'><span class='label white-text orange'>TC_005_Verify_Images</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_006_Verify_Aadhardetails</span>
+						<span class='test-time'>22-Feb-2023, 12:44:19 pm</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label end-time'>22-Feb-2023, 12:44:19 pm</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>12:44:19 pm</td>
+					<td class='step-details'><span class='label white-text orange'>TC_006_Verify_Aadhardetails</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 					</div>
 				</li>
 			</ul>
@@ -286,31 +389,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>20-Feb-2023, 12:05:07 pm</div>
+					<div class='panel-lead'>22-Feb-2023, 12:44:18 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>20-Feb-2023, 12:05:25 pm</div>
+			 		<div class='panel-lead'>22-Feb-2023, 12:44:19 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>18,176ms</div>
+					<div class='panel-lead'>1,614ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -346,22 +449,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 1,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 1,
+				skipParent: 4,
+				exceptionsParent: 5,
 				
-				passChild: 2,
+				passChild: 1,
 				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 4,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

@@ -1,16 +1,12 @@
 package Scripts;
 
 import PageObjects.Bandhu_DocsPage;
-import PageObjects.UploadBandhuDocsPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Scripts.BaseClass.driver;
 import static Utils.Constant.filepath;
 import static Utils.XLConfig.setExcelFile;
 
@@ -27,7 +23,7 @@ public class BandhuDocs_Test extends BaseClass {
     public void TC_001_Verify_BandhuDocs_PageTitle() throws IOException {
 
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
-        Bandhu_DocsPage.Clickmodule();
+        Bandhu_DocsPage.BandhuProcess();
         Bandhu_DocsPage.Validatetitle(1,1,1,3);
 
     }
@@ -36,7 +32,6 @@ public class BandhuDocs_Test extends BaseClass {
     public void TC_002_Employee_DataisShowing() throws IOException {
 
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
-        Bandhu_DocsPage.Clickmodule();
         driver.switchTo().frame("myIframe");
         Bandhu_DocsPage.Validatedata(2,3);
 
@@ -46,7 +41,7 @@ public class BandhuDocs_Test extends BaseClass {
     public void TC_003_Verify_AuditScreen_is_Showing() throws IOException, InterruptedException {
 
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
-        Bandhu_DocsPage.Eye.click();
+        Bandhu_DocsPage.View();
         Thread.sleep(1000);
         Bandhu_DocsPage.ValidateAuditscreen(1,3,3);
 
@@ -76,11 +71,7 @@ public class BandhuDocs_Test extends BaseClass {
         Bandhu_DocsPage.Aadharimage.click();
         Thread.sleep(1000);
         js.executeScript("document.getElementById('img_aadharcardimage_p').scrollIntoView(true);");
-        Bandhu_DocsPage.close.click();
-
-
-
-
+        Bandhu_DocsPage.Close1();
 
     }
 
