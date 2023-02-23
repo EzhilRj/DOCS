@@ -1,8 +1,6 @@
 package PageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -25,14 +23,12 @@ public class Bandhu_DocsPage {
     @FindBy(xpath = "//*[text()='Bandhu Docs']")
     public static WebElement BandhuDocs;
 
-    @FindBy(xpath = "//*[@id=\"assestsList\"]/tbody/tr")
-    public static WebElement Webtable;
-
-    @FindBy(xpath = "//*[@id=\"assestsList\"]/tbody/tr/td[2]")
-    public static WebElement uniqueID;
+    //AUDIT SCREEN
+    @FindBy(id = "//*[@id=\"assestsList\"]/tbody/tr/td[2]")
+    public static WebElement uniqueid;
 
     @FindBy(xpath = "//*[@id=\"assestsList\"]/tbody/tr/td[3]")
-    public static WebElement Empname;
+    public static WebElement Employeename;
 
     @FindBy(xpath = "//*[@id=\"assestsList\"]/tbody/tr/td[4]")
     public static WebElement EmailId;
@@ -47,10 +43,10 @@ public class Bandhu_DocsPage {
     public static WebElement uniqueid1;
 
     @FindBy(id = "txt_employeename")
-    public static WebElement Empname1;
+    public static WebElement Employeename1;
 
     @FindBy(id = "txt_mobileno")
-    public static WebElement mobno;
+    public static WebElement MobileNo;
 
     @FindBy(id = "txt_emailid")
     public static WebElement Emailid1;
@@ -61,27 +57,31 @@ public class Bandhu_DocsPage {
     @FindBy(id = "txt_aadharcardno")
     public static WebElement Aadharno;
 
+    @FindBy(xpath = "//*[text()='Close']")
+    public static WebElement CloseAadharDetails;
+
     @FindBy(id = "img_bankimageimage")
-    public static WebElement bankImage;
+    public static WebElement BankImage;
 
     @FindBy(id = "txt_bankaccountno")
     public static WebElement Bankaccno;
 
     @FindBy(id = "txt_ifsccode")
-    public static WebElement IFSC1;
+    public static WebElement IFSC;
+
+    @FindBy(xpath = "//*[text()='Close']")
+    public static WebElement CloseBankDetails;
 
     @FindBy(id = "BtnApproveId")
     public static WebElement Approvebutton;
 
     @FindBy(id = "BtnRejectId")
-    public static WebElement RejectbUtton;
+    public static WebElement Rejectbutton;
 
     @FindBy(id = "txt_rejectRemarks")
     public static WebElement Remarks;
 
-    @FindBy(className = "close")
-    public static WebElement Closebutton1;
-
+    //OB Initate Screen
     @FindBy(id = "txt_DivisonName")
     public static WebElement division;
 
@@ -114,32 +114,23 @@ public class Bandhu_DocsPage {
     @FindBy(id = "txt_DOB")
     public static WebElement DOB;
 
-    @FindBy(id = "txt_AadharNumber")
-    public static WebElement aadharno;
-
-    @FindBy(id = "img_AadharFrontPhoto")
-    public static WebElement Aadharfront;
-
-    @FindBy(id = "img_AadharBackPhoto")
-    public static WebElement Aadharback;
+    @FindBy(id = "txt_aadharcardno")
+    public static WebElement AadharNo1;
 
     @FindBy(id = "txt_CandidateName")
-    public static WebElement Candname;
+    public static WebElement Employeename2;
 
     @FindBy(id = "txt_EmailID")
-    public static WebElement Email;
+    public static WebElement Emailid2;
 
     @FindBy(id = "txt_MobileNumber")
-    public static WebElement Mno;
+    public static WebElement MobileNo1;
 
     @FindBy(id = "txt_BankAcNumber")
-    public static WebElement bankAcno;
+    public static WebElement BankAccountno1;
 
     @FindBy(id = "txt_IFSC_Code")
-    public static WebElement ifsc2;
-
-    @FindBy(id = "txt_BankProof")
-    public static WebElement bankproof;
+    public static WebElement IFSC1;
 
     @FindBy(id = "download_Resume")
     public static WebElement Resume;
@@ -157,15 +148,15 @@ public class Bandhu_DocsPage {
         BandhuDocs.click();
     }
 
-    public String Getuniqeid(){
-        return uniqueID.getText();
+    public static String GetUniqueid(){
+        return uniqueid.getText();
     }
 
-    public String GetEmpname(){
-        return Empname.getText();
+    public static String GetEmpname(){
+        return Employeename.getText();
     }
 
-    public String GetEmailID(){
+    public static String GetEmailID(){
         return EmailId.getText();
     }
 
@@ -173,23 +164,23 @@ public class Bandhu_DocsPage {
         Eye.click();
     }
 
-    public boolean Auditscreen(){
+    public static boolean ViewAuditscreen(){
         return Auditscreen.isDisplayed();
     }
 
-    public String Getuniqueid1(){
+    public static String Getuniqueid1(){
         return uniqueid1.getText();
     }
 
-    public String GetEmpname1(){
-        return Empname1.getText();
+    public static String GetEmpname1(){
+        return Employeename1.getText();
     }
 
     public String GetMobno(){
-        return mobno.getText();
+        return MobileNo.getText();
     }
 
-    public String GetEmailID1(){
+    public static String GetEmailID1(){
         return Emailid1.getText();
     }
 
@@ -197,20 +188,32 @@ public class Bandhu_DocsPage {
         Aadharimage.click();
     }
 
-    public String getAadharNo(){
+    public static String GetAadharNo(){
+
         return Aadharno.getText();
     }
 
+    public static void close(){
+
+        CloseAadharDetails.click();
+    }
+
     public void Bankimg(){
-        bankImage.click();
+
+        BankImage.click();
     }
 
     public String GetBankaccno(){
         return Bankaccno.getText();
     }
 
-    public String GetIFSC1(){
-        return IFSC1.getText();
+    public String GetIFSC(){
+        return IFSC.getText();
+    }
+
+    public void close1(){
+
+        CloseBankDetails.click();
     }
 
     public void Approve(){
@@ -218,15 +221,11 @@ public class Bandhu_DocsPage {
     }
 
     public void Reject(){
-        RejectbUtton.click();
+        Rejectbutton.click();
     }
 
     public void Remarks(String remarks){
         Remarks.sendKeys(remarks);
-    }
-
-    public static void Close1(){
-        Closebutton1.click();
     }
 
     public void SetDivision(String divisionname){
@@ -283,34 +282,35 @@ public class Bandhu_DocsPage {
         DOB.sendKeys(dob);
     }
 
-    public String getAadhar(){
+    public static boolean GetAadhar1(){
 
-        return aadharno.getText();
+        return AadharNo1.isDisplayed();
     }
 
     public String GetCandidatename(){
 
-        return Candname.getText();
+        return Employeename2.getText();
     }
 
-    public String GetEmail(){
+    public String GetEmailID2(){
 
-        return Email.getText();
+        return  Emailid2.getText();
     }
 
-    public String GetMobNo(){
 
-        return Mno.getText();
+    public String GetMobNo1(){
+
+        return MobileNo1.getText();
     }
 
-    public String GetBankAccno(){
+    public String GetBankAccno1(){
 
-        return bankAcno.getText();
+        return BankAccountno1.getText();
     }
 
-    public String GetIFSC2(){
+    public String GetIFSC1(){
 
-        return ifsc2.getText();
+        return IFSC1.getText();
     }
 
     public void Resume(){
@@ -330,66 +330,52 @@ public class Bandhu_DocsPage {
     //Validations
     public static void Validatedata(int setrow, int setcell) throws IOException {
 
-        boolean ui = uniqueID.isDisplayed();
-        boolean en = Empname.isDisplayed();
+        boolean ui = uniqueid.isDisplayed();
+        boolean en = Employeename.isDisplayed();
         boolean ei = EmailId.isDisplayed();
 
-        if (ui == true && en == true && ei == true) {
-
+        if (ui && en && ei) {
             xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
             Assert.assertTrue(true);
         } else {
             xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
             Assert.assertTrue(false);
-
         }
-
     }
 
 
     public static void Validatetitle(int getrow, int getcell, int setrow, int setcell) throws IOException {
 
         if (driver.getCurrentUrl().contains(xlcon.getCellData(getrow, getcell))) {
-
             xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
             Assert.assertTrue(true);
-
         } else {
-
             xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
             Assert.assertTrue(false);
-
         }
     }
 
     public static void ValidateAuditscreen(int value, int setrow, int setcell) throws IOException {
 
         if (value == 1) {
-
-            if (Auditscreen.isDisplayed()) {
-
+            if (ViewAuditscreen()) {
                 xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
                 Assert.assertTrue(true);
-
             } else {
-
                 xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
                 Assert.assertTrue(false);
-
             }
-        } else if (value == 2) {
 
-            if (
-                    Bandhu_DocsPage.uniqueid1.getAttribute("readonly") == null && Bandhu_DocsPage.Empname1.getAttribute("readonly") == null && Bandhu_DocsPage.mobno.getAttribute("readonly") == null && Bandhu_DocsPage.Emailid1.getAttribute("readonly") == null) {
+        } else if (value == 2) {
+            if (Bandhu_DocsPage.uniqueid1.getAttribute("readonly") == null && Bandhu_DocsPage.Employeename1.getAttribute("readonly") == null &&
+                    Bandhu_DocsPage.MobileNo.getAttribute("readonly") == null && Bandhu_DocsPage.Emailid1.getAttribute("readonly") == null) {
 
                 xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
                 Assert.assertTrue(true);
 
             } else {
-
-                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
-                Assert.assertTrue(true);
-
+                xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
+                Assert.assertTrue(false);
             }
 
         } else if (value == 3) {
@@ -406,36 +392,53 @@ public class Bandhu_DocsPage {
                 }
                 System.out.println("Total no. of invalid images are " + invalidImageCount);
             } catch (Exception e) {
+                xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
+                Assert.assertTrue(false);
                 e.printStackTrace();
                 System.out.println(e.getMessage());
             }
+        } else if (value == 4) {
+
+            if (GetUniqueid().equals(Getuniqueid1()) && GetEmpname().equals(GetEmpname1()) && (GetEmailID()).equals(GetEmailID1())) {
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
+            } else {
+                xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
+                Assert.assertTrue(false);
+            }
+
+        } else if (value == 5) {
+
+            Bandhu_DocsPage.Aadharimage.click();
+            if (Aadharno.isDisplayed()) {
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
+            } else {
+                xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
+                Assert.assertTrue(false);
+            }
+            Bandhu_DocsPage.close();
         }
     }
 
 
-    public static void verifyimageActive(WebElement imgElement) {
-        try {
-            HttpClient client = HttpClientBuilder.create().build();
-            HttpGet request = new HttpGet(imgElement.getAttribute("src"));
-            HttpResponse response = client.execute(request);
-            // verifying response code he HttpStatus should be 200 if not,
-            // increment as invalid images count
-            int invalidImageCount = 0;
-            if (response.getStatusLine().getStatusCode() != 200)
-                invalidImageCount++;
-        } catch (Exception e) {
-            e.printStackTrace();
+        public static void verifyimageActive(WebElement imgElement){
+            try {
+                HttpClient client = HttpClientBuilder.create().build();
+                HttpGet request = new HttpGet(imgElement.getAttribute("src"));
+                HttpResponse response = client.execute(request);
+                // verifying response code he HttpStatus should be 200 if not,
+                // increment as invalid images count
+                int invalidImageCount = 0;
+                if (response.getStatusLine().getStatusCode() != 200)
+                    invalidImageCount++;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
+
+
     }
-
-
-    public static void scrollPageDown(WebDriver driver) {
-        JavascriptExecutor js = ((JavascriptExecutor) driver);
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-    }
-
-
-}
 
 
 

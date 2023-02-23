@@ -33,7 +33,8 @@
                     <include name = "TC_003_Verify_AuditScreen_is_Showing"/>
                     <include name = "TC_004_Verify_AuditScreen_Fiedls_Readonly"/>
                     <include name = "TC_005_Verify_Images"/>
-                    <include name = "TC_006_Verify_Aadhardetails"/>
+                    <include name = "TC_006_Verify_Datas"/>
+                    <include name = "TC_007_Verify_AadharDetails"/>
                 </methods>
             </class>
         </classes>

@@ -3,6 +3,7 @@ package Scripts;
 import PageObjects.Bandhu_DocsPage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -53,6 +54,7 @@ public class BandhuDocs_Test extends BaseClass {
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.ValidateAuditscreen(2,4,3);
 
+
     }
 
     @Test(dependsOnMethods = "TC_004_Verify_AuditScreen_Fiedls_Readonly")
@@ -64,16 +66,29 @@ public class BandhuDocs_Test extends BaseClass {
     }
 
     @Test(dependsOnMethods = "TC_005_Verify_Images")
-    public void TC_006_Verify_Aadhardetails() throws IOException, InterruptedException {
+    public void TC_006_Verify_Datas() throws IOException, InterruptedException {
 
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
-        JavascriptExecutor js = (JavascriptExecutor)driver;
-        Bandhu_DocsPage.Aadharimage.click();
-        Thread.sleep(1000);
-        js.executeScript("document.getElementById('img_aadharcardimage_p').scrollIntoView(true);");
-        Bandhu_DocsPage.Close1();
+        Bandhu_DocsPage.ValidateAuditscreen(4,6,3);
 
     }
+
+    @Test(dependsOnMethods = "TC_006_Verify_Datas")
+    public void TC_007_Verify_AadharDetails() throws IOException, InterruptedException {
+
+        PageFactory.initElements(driver, Bandhu_DocsPage.class);
+        Bandhu_DocsPage.ValidateAuditscreen(5,7,3);
+
+    }
+
+    @Test
+    public void TC_008_Verify_BankDetails() throws IOException, InterruptedException {
+
+
+
+    }
+
+
 
 
 
