@@ -5,26 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="Bandhu docs">
-      <change afterPath="$PROJECT_DIR$/ScreenShots/BandhuDocsSheetSetter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_AadharDetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.17.14.03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.17.19.51.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.22.18.15.04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.13.43.34.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.14.53.13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.14.53.54.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.14.54.38.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.15.00.41.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.15.03.41.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.15.12.34.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.23.15.46.04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_BankDetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.00.37.07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.00.43.55.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.13.47.29.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.05.56.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.36.32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.38.12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.41.02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.43.55.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.46.17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.02.24.14.51.22.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/BandhuDocsSheetSetter.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/BandhuDocsSheetSetter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_BandhuDocs_PageTitle.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_BandhuDocs_PageTitle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScreenShots/TC_002_Employee_DataisShowing.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Employee_DataisShowing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_AadharDetails.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_AadharDetails.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/DOCS.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
     </list>
@@ -60,6 +60,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/com/guicedee/services/apache-poi-ooxml/62/apache-poi-ooxml-62-sources.jar!/org/apache/poi/xssf/usermodel/XSSFCell.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/4.1.3/selenium-remote-driver-4.1.3-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/4.1.3/selenium-support-4.1.3-sources.jar!/org/openqa/selenium/support/PageFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.6.1/testng-7.6.1-sources.jar!/org/testng/internal/invokers/TestInvoker.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,33 +85,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/DOCS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "E:/Automation Workspace/DOCS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;,
-      &quot;sqlserver.localdb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Scripts" />
@@ -310,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677059106204</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Bandhu docs">
+      <created>1677178527404</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677178527404</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Bandhu docs">
+      <created>1677178693676</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677178693676</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

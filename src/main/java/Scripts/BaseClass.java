@@ -42,7 +42,6 @@ public class BaseClass {
     public static String excelfilepath = filepath;
 
     public static XLConfig xlcon = new XLConfig();
-
     public static WebDriver driver;
     long StartTime;
     long endTime;

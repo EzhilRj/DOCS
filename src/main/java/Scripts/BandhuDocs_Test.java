@@ -2,10 +2,15 @@ package Scripts;
 
 import PageObjects.Bandhu_DocsPage;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 import static Utils.Constant.filepath;
@@ -77,12 +82,29 @@ public class BandhuDocs_Test extends BaseClass {
     public void TC_007_Verify_AadharDetails() throws IOException, InterruptedException {
 
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
-        Bandhu_DocsPage.ValidateAuditscreen(5,7,3);
+        Bandhu_DocsPage.Aadharimg();
+        Bandhu_DocsPage.ValidateAuditscreen(5,7,3,Bandhu_DocsPage.Aadharno);
+        Thread.sleep(600);
+        Bandhu_DocsPage.close();
+
+
 
     }
 
-    @Test
-    public void TC_008_Verify_BankDetails() throws IOException, InterruptedException {
+    @Test(dependsOnMethods = "TC_007_Verify_AadharDetails")
+    public static void TC_008_Verify_BankDetails() throws IOException, InterruptedException, AWTException {
+
+
+        PageFactory.initElements(driver, Bandhu_DocsPage.class);
+        Bandhu_DocsPage.Bankimg();
+        Bandhu_DocsPage.ValidateAuditscreen(5,8,3,Bandhu_DocsPage.Bankaccno);
+        Thread.sleep(600);
+        Bandhu_DocsPage.close1();
+
+
+
+
+
 
 
 

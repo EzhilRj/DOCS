@@ -1,6 +1,7 @@
 package PageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -24,7 +25,7 @@ public class Bandhu_DocsPage {
     public static WebElement BandhuDocs;
 
     //AUDIT SCREEN
-    @FindBy(id = "//*[@id=\"assestsList\"]/tbody/tr/td[2]")
+    @FindBy(xpath = "//*[@id=\"assestsList\"]/tbody/tr/td[2]")
     public static WebElement uniqueid;
 
     @FindBy(xpath = "//*[@id=\"assestsList\"]/tbody/tr/td[3]")
@@ -57,7 +58,7 @@ public class Bandhu_DocsPage {
     @FindBy(id = "txt_aadharcardno")
     public static WebElement Aadharno;
 
-    @FindBy(xpath = "//*[text()='Close']")
+    @FindBy(className = "close")
     public static WebElement CloseAadharDetails;
 
     @FindBy(id = "img_bankimageimage")
@@ -69,7 +70,7 @@ public class Bandhu_DocsPage {
     @FindBy(id = "txt_ifsccode")
     public static WebElement IFSC;
 
-    @FindBy(xpath = "//*[text()='Close']")
+    @FindBy(xpath = "//*[@id=\"myModal_AI\"]/div/div/div[1]/span")
     public static WebElement CloseBankDetails;
 
     @FindBy(id = "BtnApproveId")
@@ -184,7 +185,7 @@ public class Bandhu_DocsPage {
         return Emailid1.getText();
     }
 
-    public void Aadharimg(){
+    public static void Aadharimg(){
         Aadharimage.click();
     }
 
@@ -198,7 +199,7 @@ public class Bandhu_DocsPage {
         CloseAadharDetails.click();
     }
 
-    public void Bankimg(){
+    public static void Bankimg(){
 
         BankImage.click();
     }
@@ -211,7 +212,7 @@ public class Bandhu_DocsPage {
         return IFSC.getText();
     }
 
-    public void close1(){
+    public static void close1(){
 
         CloseBankDetails.click();
     }
@@ -355,7 +356,7 @@ public class Bandhu_DocsPage {
         }
     }
 
-    public static void ValidateAuditscreen(int value, int setrow, int setcell) throws IOException {
+    public static void ValidateAuditscreen(int value, int setrow, int setcell, WebElement... Element1) throws IOException {
 
         if (value == 1) {
             if (ViewAuditscreen()) {
@@ -409,15 +410,16 @@ public class Bandhu_DocsPage {
 
         } else if (value == 5) {
 
-            Bandhu_DocsPage.Aadharimage.click();
-            if (Aadharno.isDisplayed()) {
+            if (Element1!=null) {
+
                 xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
                 Assert.assertTrue(true);
             } else {
+
                 xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
                 Assert.assertTrue(false);
             }
-            Bandhu_DocsPage.close();
+
         }
     }
 
@@ -436,6 +438,7 @@ public class Bandhu_DocsPage {
                 e.printStackTrace();
             }
         }
+
 
 
     }
