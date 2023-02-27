@@ -39,18 +39,22 @@ public class ReadConfig {
 
     }
 
-    public String GetdownloadFilepath() {
+    public String Getusername() {
 
-        String downloadpath = pro.getProperty("downloadinglocation");
-        return downloadpath;
+        return pro.getProperty("Username");
 
     }
 
 
-    public String Getuploadfilepath() {
+    public String GetPassword() {
 
-        String uploadpath = pro.getProperty("Uploadinglocation");
-        return uploadpath;
+        return pro.getProperty("Password");
+
+    }
+
+    public String GetClient() {
+
+        return pro.getProperty("Company");
 
     }
 }

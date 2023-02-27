@@ -1,18 +1,13 @@
 package Scripts;
 
 import PageObjects.Bandhu_DocsPage;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 
+import static PageObjects.Bandhu_DocsPage.ValidateAlerts;
 import static Utils.Constant.filepath;
 import static Utils.XLConfig.setExcelFile;
 
@@ -101,16 +96,45 @@ public class BandhuDocs_Test extends BaseClass {
         Thread.sleep(600);
         Bandhu_DocsPage.close1();
 
+    }
 
+    @Test(dependsOnMethods = "TC_008_Verify_BankDetails")
+    public static void TC_009_Verify_Reject_without_Reason() throws IOException, InterruptedException, AWTException {
 
+        PageFactory.initElements(driver, Bandhu_DocsPage.class);
+        Bandhu_DocsPage.Reject();
+        ValidateAlerts(9,2,9,3);
+    }
 
+    @Test(dependsOnMethods = "TC_009_Verify_Reject_without_Reason")
+    public static void TC_010_Verify_Division_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
-
-
+        PageFactory.initElements(driver, Bandhu_DocsPage.class);
+        Bandhu_DocsPage.Approve();
+        Bandhu_DocsPage.initiate();
+        ValidateAlerts(10,2,10,3);
 
     }
 
+    @Test(dependsOnMethods = "TC_010_Verify_Division_name_is_Mandotory")
+    public static void TC_011_Verify_Branch_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        PageFactory.initElements(driver, Bandhu_DocsPage.class);
+        Bandhu_DocsPage.Approve();
+        Bandhu_DocsPage.initiate();
+        ValidateAlerts(10,2,10,3);
+
+    }
+
+    @Test(dependsOnMethods = "TC_011_Verify_Branch_name_is_Mandatory")
+    public static void TC_012_Verify_Town_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
+
+        PageFactory.initElements(driver, Bandhu_DocsPage.class);
+        Bandhu_DocsPage.Approve();
+        Bandhu_DocsPage.initiate();
+        ValidateAlerts(10,2,10,3);
+
+    }
 
 
 

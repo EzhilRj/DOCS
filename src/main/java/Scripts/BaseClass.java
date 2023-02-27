@@ -7,7 +7,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -28,14 +27,12 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
-import static PageObjects.LoginPage.username;
 import static Utils.Constant.*;
 
 public class BaseClass {
 
     //Properties File Reading
     static ReadConfig readconfig = new ReadConfig();
-
     //Log
    public Logger log = Logger.getLogger("BANDHUDOCSWEB");
 
@@ -81,7 +78,7 @@ public class BaseClass {
         log.info(readconfig.getapplicationURL());
         driver.manage().window().maximize();
         PageFactory.initElements(driver, LoginPage.class);
-        LoginPage.SetLoginCredentials(Username,password,Company);
+        LoginPage.SetLoginCredentials(readconfig.Getusername(),readconfig.GetPassword(),readconfig.GetClient());
 
     }
 

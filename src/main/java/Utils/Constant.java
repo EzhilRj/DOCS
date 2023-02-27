@@ -3,11 +3,6 @@ package Utils;
 public class Constant {
 
 
-    public static final String Username = "AJAZALI";
-
-    public static final String password = "AJAZALI@123";
-
-    public static final String Company = "arvind";
 
     public static  final String downloadinglocation = System.getProperty("user.dir")+"\\Downloads\\";
 
