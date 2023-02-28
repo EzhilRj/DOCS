@@ -1,17 +1,16 @@
 package PageObjects;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.io.IOException;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
 import java.util.List;
 
 import static Scripts.BaseClass.*;
@@ -217,11 +216,11 @@ public class Bandhu_DocsPage {
         CloseBankDetails.click();
     }
 
-    public void Approve(){
+    public static void Approve(){
         Approvebutton.click();
     }
 
-    public void Reject(){
+    public static void Reject(){
         Rejectbutton.click();
     }
 
@@ -229,37 +228,37 @@ public class Bandhu_DocsPage {
         Remarks.sendKeys(remarks);
     }
 
-    public void SetDivision(String divisionname){
+    public static void SetDivision(String divisionname){
         Select div = new Select(division);
         div.selectByVisibleText(divisionname);
     }
 
-    public void SetTown(String town){
+    public static void SetTown(String town){
         Select tow = new Select(TownName);
         tow.selectByVisibleText(town);
     }
 
-    public void Setbranch(String branch){
+    public static void Setbranch(String branch){
         Select branc = new Select(Branchname);
         branc.selectByVisibleText(branch);
     }
 
-    public void Setstate(String state){
+    public static void Setstate(String state){
         Select sta = new Select(statename);
         sta.selectByVisibleText(state);
     }
 
-    public void SetRm1(String rm1){
+    public static void SetRm1(String rm1){
         Select reportingmanager1 = new Select(Rm1);
         reportingmanager1.selectByVisibleText(rm1);
     }
 
-    public void SetRm2(String rm2){
+    public static void SetRm2(String rm2){
         Select reportingmanager2 = new Select(Rm2);
         reportingmanager2.selectByVisibleText(rm2);
     }
 
-    public void SetDesignation(String Designation){
+    public static void SetDesignation(String Designation){
         Select design = new Select(Desig);
         design.selectByVisibleText(Designation);
     }
@@ -269,17 +268,17 @@ public class Bandhu_DocsPage {
         cat.selectByVisibleText(category);
     }
 
-    public void Setclientbranch(String clientbranch){
+    public static void Setclientbranch(String clientbranch){
         Select sc = new Select(ClientBranch);
         sc.selectByVisibleText(clientbranch);
     }
 
-    public void SETDOJ(String doj){
+    public static void SETDOJ(String doj){
 
         DOJ.sendKeys(doj);
     }
 
-    public void SETDOB(String dob){
+    public static void SETDOB(String dob){
         DOB.sendKeys(dob);
     }
 
@@ -318,7 +317,7 @@ public class Bandhu_DocsPage {
         Resume.click();
     }
 
-    public void initiate(){
+    public static void initiate(){
 
         Obinitiate.click();
     }
@@ -348,9 +347,12 @@ public class Bandhu_DocsPage {
     public static void Validatetitle(int getrow, int getcell, int setrow, int setcell) throws IOException {
 
         if (driver.getCurrentUrl().contains(xlcon.getCellData(getrow, getcell))) {
+
             xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
             Assert.assertTrue(true);
+
         } else {
+
             xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
             Assert.assertTrue(false);
         }
@@ -423,6 +425,25 @@ public class Bandhu_DocsPage {
         }
     }
 
+    public static void ValidateAlerts(int getrow, int getcell, int setrow, int setcell) throws IOException, InterruptedException {
+
+        if(driver.switchTo().alert().getText().equals(xlcon.getCellData(getrow,getcell))){
+
+            driver.switchTo().alert().accept();
+            xlcon.setCellValue(setrow,setcell,"TestCase Passed",excelfilepath);
+            Assert.assertTrue(true);
+
+
+        }else{
+
+            driver.switchTo().alert().accept();
+            xlcon.setCellValue(setrow,setcell,"TestCase Failed",excelfilepath);
+            Assert.assertTrue(false);
+
+        }
+
+
+    }
 
         public static void verifyimageActive(WebElement imgElement){
             try {

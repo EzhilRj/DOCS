@@ -8,21 +8,21 @@
         <classes>
             <class name="Scripts.UploadBandhuDocs_Test">
                 <methods>
-                    <exclude name = "UploadbandhuDocsSheetsetter"/>
-                    <exclude name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
-                    <exclude name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
-                    <exclude name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
-                    <exclude name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
-                    <exclude name = "TC_005_Verify_EmailID_With_InValidEmail"/>
-                    <exclude name = "TC_006_Verify_User_is_Created"/>
-                    <exclude name = "TC_007_Verify_Duplicate_Mobileno_EmailID"/>
+                    <include name = "UploadbandhuDocsSheetsetter"/>
+                    <include name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
+                    <include name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
+                    <include name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
+                    <include name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
+                    <include name = "TC_005_Verify_EmailID_With_InValidEmail"/>
+                    <include name = "TC_006_Verify_User_is_Created"/>
+                    <include name = "TC_007_Verify_Duplicate_Mobileno_EmailID"/>
                     <exclude name = "TC_008_Verify_Userdata_is_Stored_in_Database"/>
-                    <exclude name = "TC_009_Verify_FileUpload"/>
+                    <include name = "TC_009_Verify_FileUpload"/>
                     <exclude name = "TC_010_Verify_UploadedData_is_Stored_in_Database"/>
-                    <exclude name = "TC_011_Verify_ExporButton"/>
-                    <exclude name = "TC_012_Verify_UploadButton_Without_Selecting_File"/>
-                    <exclude name = "TC_013_Verify_with_EmptyExcel"/>
-                    <exclude name = "TC_014_Verify_TextBoxErrorMessages"/>
+                    <include name = "TC_011_Verify_ExporButton"/>
+                    <include name = "TC_012_Verify_UploadButton_Without_Selecting_File"/>
+                    <include name = "TC_013_Verify_with_EmptyExcel"/>
+                    <include name = "TC_014_Verify_TextBoxErrorMessages"/>
                 </methods>
             </class>
             <class name="Scripts.BandhuDocs_Test">
@@ -36,6 +36,19 @@
                     <include name = "TC_006_Verify_Datas"/>
                     <include name = "TC_007_Verify_AadharDetails"/>
                     <include name = "TC_008_Verify_BankDetails"/>
+                    <include name = "TC_009_Verify_Reject_without_Reason"/>
+                    <include name = "TC_010_Verify_Division_name_is_Mandatory"/>
+                    <include name = "TC_011_Verify_Branch_name_is_Mandatory"/>
+                    <include name = "TC_012_Verify_Town_name_is_Mandatory"/>
+                    <include name = "TC_013_Verify_State_name_is_Mandatory"/>
+                    <include name = "TC_014_Verify_RM1_is_Mandatory"/>
+                    <include name = "TC_015_Verify_RM2_is_Mandatory"/>
+                    <include name = "TC_016_Verify_Designation_is_Mandatory"/>
+                    <include name = "TC_017_Verify_ClientBranch_is_Mandatory"/>
+                    <include name = "TC_018_Verify_3DaysDOJ_is_Mandatory"/>
+                    <include name = "TC_019_Verify_DOJ_is_Mandatory"/>
+                    <include name = "TC_020_Verify_18Years_is_Mandatory"/>
+                    <include name = "TC_021_Verify_DOB_is_Mandatory"/>
                 </methods>
             </class>
         </classes>

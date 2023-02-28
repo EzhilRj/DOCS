@@ -74,6 +74,7 @@ public class BaseClass {
         }
 
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+        driver.manage().deleteAllCookies();
         driver.get(readconfig.getapplicationURL());
         log.info(readconfig.getapplicationURL());
         driver.manage().window().maximize();
@@ -82,7 +83,7 @@ public class BaseClass {
 
     }
 
-    @AfterSuite(enabled = false)
+    @AfterSuite(enabled = true)
     public void closebrowser() throws InterruptedException {
 
         driver.quit();

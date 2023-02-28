@@ -20,6 +20,8 @@ public class ListenersConfig extends TestListenerAdapter {
 
     public ExtentHtmlReporter htmlReporter;
     public ExtentReports extent;
+    public ExtentTest test;
+
     public ExtentTest logger;
 
     public void onStart(ITestContext testContext) {
