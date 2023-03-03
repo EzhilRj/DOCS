@@ -48,9 +48,20 @@ public class XLConfig {
         //creating a new cell in row and setting value to it
 
             sheet.getRow(rowNum).createCell(cellNum).setCellValue(cellValue);
+            sheet.setHorizontallyCenter(true);
 
-        FileOutputStream outputStream = new FileOutputStream(excelFilePath);
-        workbook.write(outputStream);
+            try{
+
+                FileOutputStream outputStream = new FileOutputStream(excelFilePath);
+                workbook.write(outputStream);
+
+            }catch (Exception e){
+
+                System.out.println(e.getMessage()+ "The TestData file has been opened! , Please close to allow for execution. Thanks");
+                e.notifyAll();
+
+            }
+
 
     }
 }

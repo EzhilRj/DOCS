@@ -2,6 +2,7 @@ package PageObjects;
 
 import Scripts.BaseClass;
 import Utils.DBConfig;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +19,9 @@ import java.io.IOException;
 
 import static Scripts.BaseClass.*;
 import static Utils.Constant.downloadinglocation;
+import static Utils.Constant.isFileDownloaded;
 import static Utils.DBConfig.ConnectDB;
+import static Utils.ListenersConfig.test;
 
 public class UploadBandhuDocsPage extends BaseClass {
 
@@ -146,9 +149,11 @@ public class UploadBandhuDocsPage extends BaseClass {
     }
 
 
-    public static void clickModule(){
+    public static void clickModule() throws InterruptedException {
 
+        Thread.sleep(600);
         UploadBandhuDocsPage.Bandhuprocess.click();
+        Thread.sleep(1000);
         UploadBandhuDocsPage.UploadbandhuDocs.click();
     }
 
@@ -162,6 +167,8 @@ public class UploadBandhuDocsPage extends BaseClass {
 
                 Assert.assertTrue(true, "TestCase Passed");
                 xlcon.setCellValue(row,cell,"TestCase Passed",excelfilepath);
+                log.info(errmsg);
+                log.info("TestCase Passed");
 
             }
 
@@ -171,6 +178,8 @@ public class UploadBandhuDocsPage extends BaseClass {
 
                 Assert.assertTrue(true, "TestCase Passed");
                 xlcon.setCellValue(row,cell,"TestCase Passed",excelfilepath);
+                log.info(errmsg);
+                log.info("TestCase Passed");
 
             }
 
@@ -180,12 +189,17 @@ public class UploadBandhuDocsPage extends BaseClass {
 
                 Assert.assertTrue(true, "TestCase Passed");
                 xlcon.setCellValue(row,cell,"TestCase Passed",excelfilepath);
+                log.info(errmsg);
+                log.info("TestCase Passed");
             }
 
         }else{
 
-            Assert.assertTrue(false,"TestCase Failed");
             xlcon.setCellValue(row,cell,"TestCase Failed",excelfilepath);
+            log.error("TestCase Failed");
+            Assert.assertTrue(false,"TestCase Failed");
+
+
         }
 
     }
@@ -196,12 +210,15 @@ public class UploadBandhuDocsPage extends BaseClass {
         if(driver.getPageSource().contains(errmsg)){
 
             xlcon.setCellValue(row,column,"TestCase Passed",excelfilepath);
+            log.info(errmsg);
+            log.info("TestCase Passed");
             Assert.assertTrue(true);
 
         }else {
 
             xlcon.setCellValue(row,column,"TestCase Failed",excelfilepath);
             xlcon.setCellValue(6,4,"Cause : "+Errormsg.getText(),excelfilepath);
+            log.error("TestCase Failed");
             Assert.assertTrue(false);
 
         }
@@ -216,14 +233,17 @@ public class UploadBandhuDocsPage extends BaseClass {
         if(verifyfiledownload){
 
             xlcon.setCellValue(row,column,"TestCase Passed",excelfilepath);
+            log.info("File Downloaded Successfully");
             Assert.assertTrue(true, "Testcase Passed");
             File f= new File (downloadinglocation+"UploadBandhuDocs.csv");
             f.delete();
+            log.info("File Deleted Successfully");
 
 
         }else{
 
             xlcon.setCellValue(row,column,"TestCase Failed",excelfilepath);
+            log.error("TestCase Failed");
             Assert.assertTrue(false, "Testcase failed");
         }
 

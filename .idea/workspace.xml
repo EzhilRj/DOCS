@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="BandhuDocs Database Disabled version">
-      <change afterPath="$PROJECT_DIR$/TestRunner/Regression.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestRunner/Sanity.xml" afterDir="false" />
+    <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="BandhuDocs Sanity and Regression Suites Added">
+      <change afterPath="$PROJECT_DIR$/Downloads/UploadBandhuDocs (5).csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_022_Verify_OB_Initiate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.03.25.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.06.06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.08.19.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestRunner/DOCS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestRunner/Regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/Regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestRunner/Sanity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/Sanity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/ListenersConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/ListenersConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/UploadConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
     </list>
@@ -21,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,10 +64,12 @@
     <setting file="jar://$MAVEN_REPOSITORY$/com/guicedee/services/apache-poi-ooxml/62/apache-poi-ooxml-62-sources.jar!/org/apache/poi/xssf/usermodel/XSSFCell.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/4.1.3/selenium-remote-driver-4.1.3-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/4.1.3/selenium-support-4.1.3-sources.jar!/org/openqa/selenium/support/PageFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.6.1/testng-7.6.1-sources.jar!/org/testng/Assert.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.6.1/testng-7.6.1-sources.jar!/org/testng/internal/invokers/TestInvoker.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,47 +92,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/SELENIUM&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.obiscr.chatgpt.settings.ChatGPTSettingsPanel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "E:/Automation Workspace/SELENIUM",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;,
-      &quot;sqlserver.localdb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Utils" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml">
-    <configuration name="forloopexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="forloopexample" />
-      <module name="DOCS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BandhuDocs_Test.TC_004_Verify_AuditScreen_Fiedls_Readonly" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.E:/Automation Workspace/DOCS/TestRunner/Regression.xml">
+    <configuration name="dateclass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scripts.dateclass" />
       <module name="DOCS" />
       <extension name="coverage">
         <pattern>
@@ -118,12 +137,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Scripts" />
-      <option name="MAIN_CLASS_NAME" value="Scripts.BandhuDocs_Test" />
-      <option name="METHOD_NAME" value="TC_004_Verify_AuditScreen_Fiedls_Readonly" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,13 +196,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="E:/Automation Workspace/DOCS/TestRunner/Regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DOCS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestRunner/Regression.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/Regression.xml" />
+        <item itemvalue="Application.dateclass" />
         <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" />
         <item itemvalue="TestNG.BandhuDocs_Test.TC_011_Verify_Branch_name_is_Mandatory" />
         <item itemvalue="TestNG.BandhuDocs_Test.Verify_BandhuDocs_PageTitle" />
-        <item itemvalue="TestNG.BandhuDocs_Test.TC_004_Verify_AuditScreen_Fiedls_Readonly" />
-        <item itemvalue="Application.forloopexample" />
       </list>
     </recent_temporary>
   </component>
@@ -340,11 +363,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677588690710</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="BandhuDocs Sanity and Regression Suites Added">
+      <created>1677592763587</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1677592763587</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -363,7 +396,8 @@
     <MESSAGE value="Bandhu docs" />
     <MESSAGE value="BandhuDocs 1.0" />
     <MESSAGE value="BandhuDocs Database Disabled version" />
-    <option name="LAST_COMMIT_MESSAGE" value="BandhuDocs Database Disabled version" />
+    <MESSAGE value="BandhuDocs Sanity and Regression Suites Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="BandhuDocs Sanity and Regression Suites Added" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

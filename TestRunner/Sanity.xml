@@ -8,24 +8,24 @@
         <classes>
             <class name="Scripts.UploadBandhuDocs_Test">
                 <methods>
-                    <exclude name = "UploadbandhuDocsSheetsetter"/>
-                    <exclude name = "TC_006_Verify_User_is_Created"/>
-                    <exclude name = "TC_007_Verify_Duplicate_Mobileno_EmailID"/>
-                    <exclude name = "TC_008_Verify_Userdata_is_Stored_in_Database"/>
-                    <exclude name = "TC_009_Verify_FileUpload"/>
-                    <exclude name = "TC_010_Verify_UploadedData_is_Stored_in_Database"/>
+                    <include name = "UploadbandhuDocsSheetsetter"/>
+                    <include name = "TC_006_Verify_User_is_Created"/>
+                    <include name = "TC_007_Verify_Duplicate_Mobileno_EmailID"/>
+                    <include name = "TC_008_Verify_Userdata_is_Stored_in_Database"/>
+                    <include name = "TC_009_Verify_FileUpload"/>
+                    <include name = "TC_010_Verify_UploadedData_is_Stored_in_Database"/>
                 </methods>
             </class>
             <class name="Scripts.BandhuDocs_Test">
                 <methods>
-                    <include name = "BandhuDocsSheetSetter"/>
-                    <include name = "TC_001_Verify_BandhuDocs_PageTitle"/>
-                    <include name = "TC_002_Employee_DataisShowing"/>
-                    <include name = "TC_003_Verify_AuditScreen_is_Showing"/>
-                    <include name = "TC_005_Verify_Images"/>
-                    <include name = "TC_006_Verify_Datas"/>
-                    <include name = "TC_007_Verify_AadharDetails"/>
-                    <include name = "TC_008_Verify_BankDetails"/>
+                    <exclude name = "BandhuDocsSheetSetter"/>
+                    <exclude name = "TC_001_Verify_BandhuDocs_PageTitle"/>
+                    <exclude name = "TC_002_Employee_DataisShowing"/>
+                    <exclude name = "TC_003_Verify_AuditScreen_is_Showing"/>
+                    <exclude name = "TC_005_Verify_Images"/>
+                    <exclude name = "TC_006_Verify_Datas"/>
+                    <exclude name = "TC_007_Verify_AadharDetails"/>
+                    <exclude name = "TC_008_Verify_BankDetails"/>
                 </methods>
             </class>
         </classes>

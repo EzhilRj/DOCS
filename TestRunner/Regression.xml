@@ -7,7 +7,7 @@
     <test name="UploadBandhuDocsTest">
         <classes>
             <class name="Scripts.UploadBandhuDocs_Test">
-                <methods>
+              <!--  <methods>
                     <exclude name = "UploadbandhuDocsSheetsetter"/>
                     <exclude name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
                     <exclude name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
@@ -23,9 +23,9 @@
                     <exclude name = "TC_012_Verify_UploadButton_Without_Selecting_File"/>
                     <exclude name = "TC_013_Verify_with_EmptyExcel"/>
                     <exclude name = "TC_014_Verify_TextBoxErrorMessages"/>
-                </methods>
+                </methods>-->
             </class>
-            <class name="Scripts.BandhuDocs_Test">
+<!--         <class name="Scripts.BandhuDocs_Test">
                 <methods>
                     <include name = "BandhuDocsSheetSetter"/>
                     <include name = "TC_001_Verify_BandhuDocs_PageTitle"/>
@@ -45,12 +45,13 @@
                     <include name = "TC_015_Verify_RM2_is_Mandatory"/>
                     <include name = "TC_016_Verify_Designation_is_Mandatory"/>
                     <include name = "TC_017_Verify_ClientBranch_is_Mandatory"/>
-                    <include name = "TC_018_Verify_3DaysDOJ_is_Mandatory"/>
-                    <include name = "TC_019_Verify_DOJ_is_Mandatory"/>
-                    <include name = "TC_020_Verify_18Years_is_Mandatory"/>
-                    <include name = "TC_021_Verify_DOB_is_Mandatory"/>
+                    <include name = "TC_018_Verify_DOJ_is_Mandatory"/>
+                    <include name = "TC_019_Verify_3DaysDOJ_is_Mandatory"/>
+                    <include name = "TC_020_Verify_DOB_is_Mandatory"/>
+                    <include name = "TC_021_Verify_18Years_is_Mandatory"/>
+                    <include name = "TC_022_Verify_OB_Initiate"/>
                 </methods>
-            </class>
+            </class>-->
         </classes>
     </test>
 </suite>

@@ -11,6 +11,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
+import org.testng.annotations.AfterTest;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -19,8 +20,8 @@ import java.util.Date;
 public class ListenersConfig extends TestListenerAdapter {
 
     public ExtentHtmlReporter htmlReporter;
-    public ExtentReports extent;
-    public ExtentTest test;
+    public static ExtentReports extent;
+    public static ExtentTest test;
 
     public ExtentTest logger;
 
@@ -38,11 +39,12 @@ public class ListenersConfig extends TestListenerAdapter {
         extent.setSystemInfo("Environemnt", "QA");
         extent.setSystemInfo("user", "EzhilRaj");
 
-        htmlReporter.config().setDocumentTitle("Automation Report"); // Tile of report
+        htmlReporter.config().setDocumentTitle("DOCS WEB 1.0 Automation Report"); // Tile of report
         htmlReporter.config().setReportName("Functional Testing"); // name of the report
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); // location of the chart
         htmlReporter.config().setTheme(Theme.DARK);
     }
+
 
     public void onTestSuccess(ITestResult tr) {
         logger = extent.createTest(tr.getName()); // create new entry in th report
@@ -66,6 +68,13 @@ public class ListenersConfig extends TestListenerAdapter {
         logger = extent.createTest(tr.getName()); // create new entry in th report
         logger.log(Status.SKIP, MarkupHelper.createLabel(tr.getName(), ExtentColor.ORANGE));
     }
+
+    @AfterTest
+    public void tearDown()
+    {
+        extent.flush();
+    }
+
 
     public void onFinish(ITestContext testContext) {
         extent.flush();

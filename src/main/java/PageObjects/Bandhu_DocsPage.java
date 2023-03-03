@@ -1,11 +1,13 @@
 package PageObjects;
 
+import Utils.DBConfig;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -82,29 +84,39 @@ public class Bandhu_DocsPage {
     public static WebElement Remarks;
 
     //OB Initate Screen
+    @CacheLookup
     @FindBy(id = "txt_DivisonName")
     public static WebElement division;
 
+    @CacheLookup
     @FindBy(id = "txt_TownName")
     public static WebElement TownName;
 
+    @CacheLookup
     @FindBy(id = "txt_BranchName")
     public static WebElement Branchname;
 
+    @CacheLookup
     @FindBy(id = "txt_StateName")
     public static WebElement statename;
+
+    @CacheLookup
     @FindBy(id = "txt_ReportingManager1")
     public static WebElement Rm1;
 
+    @CacheLookup
     @FindBy(id = "txt_ReportingManager2")
     public static WebElement Rm2;
 
+    @CacheLookup
     @FindBy(id = "txt_Designation")
     public static WebElement Desig;
 
+    @CacheLookup
     @FindBy(id = "txt_EmployeeCategory")
     public static WebElement EmpCate;
 
+    @CacheLookup
     @FindBy(id = "txt_ClientBranch")
     public static WebElement ClientBranch;
 
@@ -150,6 +162,11 @@ public class Bandhu_DocsPage {
 
     public static String GetUniqueid(){
         return uniqueid.getText();
+    }
+
+    public static void Saveduniqueid() throws IOException {
+
+        xlcon.setCellValue(6,1,uniqueid.getText(),excelfilepath);
     }
 
     public static String GetEmpname(){
@@ -313,7 +330,7 @@ public class Bandhu_DocsPage {
         return IFSC1.getText();
     }
 
-    public void Resume(){
+    public static void Resume(){
         Resume.click();
     }
 
@@ -341,6 +358,7 @@ public class Bandhu_DocsPage {
             xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
             Assert.assertTrue(false);
         }
+
     }
 
 
@@ -358,7 +376,7 @@ public class Bandhu_DocsPage {
         }
     }
 
-    public static void ValidateAuditscreen(int value, int setrow, int setcell, WebElement... Element1) throws IOException {
+    public static void ValidateAuditscreen(int value, int setrow, int setcell, WebElement... Element1) throws IOException, InterruptedException {
 
         if (value == 1) {
             if (ViewAuditscreen()) {
@@ -403,6 +421,7 @@ public class Bandhu_DocsPage {
         } else if (value == 4) {
 
             if (GetUniqueid().equals(Getuniqueid1()) && GetEmpname().equals(GetEmpname1()) && (GetEmailID()).equals(GetEmailID1())) {
+
                 xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
                 Assert.assertTrue(true);
             } else {
@@ -422,47 +441,70 @@ public class Bandhu_DocsPage {
                 Assert.assertTrue(false);
             }
 
+        }else if (value == 6) {
+
+            Thread.sleep(4000);
+            if (driver.getPageSource().contains(xlcon.getCellData(6,1))) {
+
+                xlcon.setCellValue(setrow, setcell, "TestCase Failed", excelfilepath);
+                Assert.assertTrue(false);
+
+            } else {
+
+                xlcon.setCellValue(setrow, setcell, "TestCase Passed", excelfilepath);
+                Assert.assertTrue(true);
+                Thread.sleep(2000);
+
+
+            }
+
         }
     }
 
     public static void ValidateAlerts(int getrow, int getcell, int setrow, int setcell) throws IOException, InterruptedException {
 
-        if(driver.switchTo().alert().getText().equals(xlcon.getCellData(getrow,getcell))){
+        try{
 
-            driver.switchTo().alert().accept();
-            xlcon.setCellValue(setrow,setcell,"TestCase Passed",excelfilepath);
-            Assert.assertTrue(true);
+            if(driver.switchTo().alert().getText().equals(xlcon.getCellData(getrow,getcell))){
 
-
-        }else{
-
-            driver.switchTo().alert().accept();
-            xlcon.setCellValue(setrow,setcell,"TestCase Failed",excelfilepath);
-            Assert.assertTrue(false);
-
-        }
+                driver.switchTo().alert().accept();
+                xlcon.setCellValue(setrow,setcell,"TestCase Passed",excelfilepath);
+                Assert.assertTrue(true);
 
 
-    }
+            }else{
 
-        public static void verifyimageActive(WebElement imgElement){
-            try {
-                HttpClient client = HttpClientBuilder.create().build();
-                HttpGet request = new HttpGet(imgElement.getAttribute("src"));
-                HttpResponse response = client.execute(request);
-                // verifying response code he HttpStatus should be 200 if not,
-                // increment as invalid images count
-                int invalidImageCount = 0;
-                if (response.getStatusLine().getStatusCode() != 200)
-                    invalidImageCount++;
-            } catch (Exception e) {
-                e.printStackTrace();
+                driver.switchTo().alert().accept();
+                xlcon.setCellValue(setrow,setcell,"TestCase Failed",excelfilepath);
+                Assert.assertTrue(false);
+
             }
+
+        }catch (Exception e){
+
+            e.getMessage();
         }
 
 
 
     }
+
+    public static void verifyimageActive(WebElement imgElement){
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpGet request = new HttpGet(imgElement.getAttribute("src"));
+            HttpResponse response = client.execute(request);
+            // verifying response code he HttpStatus should be 200 if not,
+            // increment as invalid images count
+            int invalidImageCount = 0;
+            if (response.getStatusLine().getStatusCode() != 200)
+                invalidImageCount++;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+}
 
 
 

@@ -22,6 +22,7 @@ import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
@@ -34,7 +35,7 @@ public class BaseClass {
     //Properties File Reading
     static ReadConfig readconfig = new ReadConfig();
     //Log
-   public Logger log = Logger.getLogger("BANDHUDOCSWEB");
+   public static Logger log = Logger.getLogger("DOCSWEB1.0");
 
     public static String excelfilepath = filepath;
 
@@ -73,13 +74,14 @@ public class BaseClass {
 
         }
 
-        driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
-        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        //driver.manage().deleteAllCookies();
         driver.get(readconfig.getapplicationURL());
         log.info(readconfig.getapplicationURL());
         driver.manage().window().maximize();
         PageFactory.initElements(driver, LoginPage.class);
         LoginPage.SetLoginCredentials(readconfig.Getusername(),readconfig.GetPassword(),readconfig.GetClient());
+        log.info(readconfig.Getusername()+readconfig.GetPassword()+readconfig.GetClient());
 
     }
 
@@ -106,64 +108,5 @@ public class BaseClass {
         }
 
     }
-
-    public String GetRandomNumber() {
-
-        int randomnum1 = ThreadLocalRandom.current().nextInt();
-        String randomnum = String.valueOf(randomnum1);
-
-        return randomnum;
-
-    }
-
-    public static String GetRandomSpecialCharacters() {
-
-        String Randspecchar = "!@#$%^&*()_+{}";
-        StringBuilder salt = new StringBuilder();
-        Random rnd = new Random();
-        while (salt.length() < 10) { // length of the random string.
-            int index = (int) (rnd.nextFloat() * Randspecchar.length());
-            salt.append(Randspecchar.charAt(index));
-        }
-        String Randomspecailcharac = salt.toString();
-        return Randomspecailcharac;
-
-    }
-
-    public String GetRandomString(){
-
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        StringBuilder sb = new StringBuilder();
-        Random random = new Random();
-        int length = 7;for(int i = 0; i < length; i++) {
-
-            int index = random.nextInt(alphabet.length());
-
-            char randomChar = alphabet.charAt(index);
-
-            sb.append(randomChar);
-        }
-
-        String randomString = sb.toString();
-
-        return randomString;
-    }
-
-    public static boolean isFileDownloaded(String downloadPath, String fileName) {
-
-        boolean flag = false;
-        File dir = new File(downloadPath);
-        File[] dir_contents = dir.listFiles();
-
-        for (int i = 0; i < dir_contents.length; i++) {
-
-            if (dir_contents[i].getName().equals(fileName))
-
-                return flag=true;
-        }
-
-        return flag;
-    }
-
 
 }
