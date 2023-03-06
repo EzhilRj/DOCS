@@ -9,15 +9,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 import static PageObjects.UploadBandhuDocsPage.ValidateDownloaded;
+import static PageObjects.UploadBandhuDocsPage.upload;
 import static Utils.Constant.*;
 import static Utils.DBConfig.ConnectDB;
 import static Utils.XLConfig.setExcelFile;
 
 public class UploadBandhuDocs_Test extends BaseClass {
 
-   public static  String Specialchar = GetRandomSpecialCharacters();
+    public static  String Specialchar = GetRandomSpecialCharacters();
     public static  String Randomnum = GetRandomNumber();
-
     public static  String Randomstring = GetRandomString();
 
     @Test(priority = 1)
@@ -35,7 +35,6 @@ public class UploadBandhuDocs_Test extends BaseClass {
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetEmpname(Specialchar);
-        log.info(Specialchar);
         UploadBandhuDocsPage.TextboxValidate(1, xlcon.getCellData(1, 2), 1, 3);
 
     }
@@ -45,9 +44,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         log.info("TC_002_Verify_EmployeenameTextBox_with_Numbers");
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetEmpname(Randomnum);
-        log.info(Randomnum);
         UploadBandhuDocsPage.TextboxValidate(1, xlcon.getCellData(2, 2), 2, 3);
 
     }
@@ -57,9 +54,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         log.info("TC_003_Verify_MobileNumberTextBox_with_Characters");
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetMobileno(Randomstring);
-        log.info(Randomstring);
         UploadBandhuDocsPage.TextboxValidate(2, xlcon.getCellData(3, 2), 3, 3);
 
     }
@@ -69,9 +64,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         log.info("TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters");
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetMobileno(Specialchar);
-        log.info(Specialchar);
         UploadBandhuDocsPage.TextboxValidate(2, xlcon.getCellData(4, 2), 4, 3);
 
     }
@@ -82,11 +75,8 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         log.info("TC_005_Verify_EmailID_With_InValidEmail");
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetEmailid(Randomstring);
-        log.info(Randomstring);
         UploadBandhuDocsPage.TextboxValidate(3, xlcon.getCellData(5, 2), 5, 3);
-
 
     }
 
@@ -97,7 +87,6 @@ public class UploadBandhuDocs_Test extends BaseClass {
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetCredentials(xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1));
-        log.info(xlcon.getCellData(6, 1)+xlcon.getCellData(7, 1)+xlcon.getCellData(8, 1));
         UploadBandhuDocsPage.savebutton();
         UploadBandhuDocsPage.Validate(xlcon.getCellData(6, 2), 6, 3);
 
@@ -110,7 +99,6 @@ public class UploadBandhuDocs_Test extends BaseClass {
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.SetCredentials(xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1));
-        log.info(xlcon.getCellData(6, 1)+ xlcon.getCellData(7, 1)+ xlcon.getCellData(8, 1));
         UploadBandhuDocsPage.savebutton();
         UploadBandhuDocsPage.Validate(xlcon.getCellData(14,2),14,3);
         UploadBandhuDocsPage.Mobileno.clear();
@@ -124,7 +112,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
     public void TC_008_Verify_Userdata_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException {
 
         log.info("TC_008_Verify_Userdata_is_Stored_in_Database");
-        ConnectDB(1,xlcon.getCellData(9, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 9, 3);
+        ConnectDB(1,xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 10, 3);
 
     }
 
@@ -135,9 +123,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         log.info("TC_009_Verify_FileUpload");
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         uploadfile(Uploadinglocation+"UploadBandhuDocs.csv");
-        log.info(Uploadinglocation+"UploadBandhuDocs.csv");
         UploadBandhuDocsPage.Uploadbutton();
         UploadBandhuDocsPage.Validate(xlcon.getCellData(11,2),11,3);
 
@@ -147,7 +133,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
     public void TC_010_Verify_UploadedData_is_Stored_in_Database() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         log.info("TC_010_Verify_UploadedData_is_Stored_in_Database");
-        ConnectDB(1,xlcon.getCellData(12, 1), xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);
+        ConnectDB(1, xlcon.getCellData(6, 1), xlcon.getCellData(7, 1), xlcon.getCellData(8, 1), 12, 3);
 
     }
 
@@ -156,7 +142,6 @@ public class UploadBandhuDocs_Test extends BaseClass {
 
         log.info("TC_011_Verify_ExporButton");
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.ExportButton();
         Thread.sleep(1000);
         ValidateDownloaded(10, 3);
@@ -170,7 +155,7 @@ public class UploadBandhuDocs_Test extends BaseClass {
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
         UploadBandhuDocsPage.clickModule();
         UploadBandhuDocsPage.Uploadbutton();
-        UploadBandhuDocsPage.Validate(xlcon.getCellData(13,2),13,3);
+        UploadBandhuDocsPage.Validate(xlcon.getCellData(14,2),14,3);
 
     }
 
@@ -178,7 +163,6 @@ public class UploadBandhuDocs_Test extends BaseClass {
     public void TC_013_Verify_with_EmptyExcel() throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException {
 
         PageFactory.initElements(driver, UploadBandhuDocsPage.class);
-        UploadBandhuDocsPage.clickModule();
         uploadfile(Uploadinglocation+"EmptyUploadBandhuDocs.csv");
         UploadBandhuDocsPage.Uploadbutton();
 
@@ -197,7 +181,6 @@ public class UploadBandhuDocs_Test extends BaseClass {
         UploadBandhuDocsPage.SetCredentials("",xlcon.getCellData(7, 1),"");
         UploadBandhuDocsPage.savebutton();
         UploadBandhuDocsPage.Validate(xlcon.getCellData(19,2),19,3);
-
 
     }
 

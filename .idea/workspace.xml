@@ -4,32 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="BandhuDocs Sanity and Regression Suites Added">
-      <change afterPath="$PROJECT_DIR$/Downloads/UploadBandhuDocs (5).csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_022_Verify_OB_Initiate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.03.25.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.06.06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.08.19.html" afterDir="false" />
+    <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="BandhuDocs UploadbandhuDocsTest Logs added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestRunner/Regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/Regression.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestRunner/Sanity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/Sanity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Uploads/UploadBandhuDocs.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/ListenersConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/ListenersConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/UploadConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/XLConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,33 +70,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "E:/Automation Workspace/SELENIUM",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/DOCS 1.0&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver",
-      "sqlserver.localdb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;,
+      &quot;sqlserver.localdb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Utils" />
@@ -127,7 +105,7 @@
       <recent name="Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.E:/Automation Workspace/DOCS/TestRunner/Regression.xml">
+  <component name="RunManager" selected="TestNG.E:/Automation Workspace/DOCS 1.0/TestRunner/Regression.xml">
     <configuration name="dateclass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Scripts.dateclass" />
       <module name="DOCS" />
@@ -159,18 +137,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BandhuDocs_Test.Verify_BandhuDocs_PageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DOCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Scripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Scripts" />
-      <option name="MAIN_CLASS_NAME" value="Scripts.BandhuDocs_Test" />
-      <option name="METHOD_NAME" value="Verify_BandhuDocs_PageTitle" />
-      <option name="TEST_OBJECT" value="METHOD" />
+    <configuration name="E:/Automation Workspace/DOCS 1.0/TestRunner/Regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DOCS 1.0" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestRunner/Regression.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -208,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.E:/Automation Workspace/DOCS 1.0/TestRunner/Regression.xml" />
         <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/Regression.xml" />
         <item itemvalue="Application.dateclass" />
         <item itemvalue="TestNG.E:/Automation Workspace/DOCS/TestRunner/DOCS.xml" />
         <item itemvalue="TestNG.BandhuDocs_Test.TC_011_Verify_Branch_name_is_Mandatory" />
-        <item itemvalue="TestNG.BandhuDocs_Test.Verify_BandhuDocs_PageTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677592763587</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="BandhuDocs Sanity and Regression Suites Added">
+      <created>1677832526899</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1677832526899</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,9 +374,54 @@
     <MESSAGE value="BandhuDocs 1.0" />
     <MESSAGE value="BandhuDocs Database Disabled version" />
     <MESSAGE value="BandhuDocs Sanity and Regression Suites Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="BandhuDocs Sanity and Regression Suites Added" />
+    <MESSAGE value="BandhuDocs UploadbandhuDocsTest Logs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="BandhuDocs UploadbandhuDocsTest Logs added" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.util.logging.LogRecord" memberName="sourceMethodName" />

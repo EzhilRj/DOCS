@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static Scripts.BaseClass.driver;
+import static Scripts.BaseClass.log;
 
 public class Constant {
 
@@ -94,6 +95,7 @@ public class Constant {
         Thread.sleep(800);
         WebElement uploadPhotoBtn = driver.findElement(By.xpath("//*[@type=\"file\"]"));
         uploadPhotoBtn.sendKeys(Path);
+        log.info(Path);
 
     }
 
