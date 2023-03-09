@@ -13,7 +13,7 @@ public class DBConfig extends BaseClass {
     static Connection con = null;
 
     //This Method is for Delete and Verify the data is stored or not in Database
-    public static void ConnectDB(int Value, String query, String empname, String Mobile , String Email, int Row , int col) throws ClassNotFoundException, SQLException, SQLException, IOException {
+    public static void ConnectDB(int Value, String empname, String Mobile , String Email, int Row , int col) throws ClassNotFoundException, SQLException, SQLException, IOException {
 
         try{
 
@@ -22,8 +22,8 @@ public class DBConfig extends BaseClass {
             log.info(con);
 
             Statement statement = con.createStatement();
-            ResultSet result = statement.executeQuery(query);
-            log.info(query+empname+Mobile+Email);
+            ResultSet result = statement.executeQuery("select * from EmployeeInitiateDocs where Employeename = '"+empname+"'");
+            log.info(empname+Mobile+Email);
 
             result.next();
             boolean employeename = result.getString("EmployeeName").equals(empname);

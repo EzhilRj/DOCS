@@ -32,10 +32,10 @@ public class ReadConfig {
 
     }
 
-    public String getapplicationURL() {
+    public String GetEnvironment() {
 
-        String Url = pro.getProperty("BaseURL");
-        return Url;
+        String env = pro.getProperty("Environment");
+        return env;
 
     }
 

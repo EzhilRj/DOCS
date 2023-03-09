@@ -5,9 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23ca0d53-c115-4a1c-bd2d-a5d413670620" name="Changes" comment="BandhuDocs UploadbandhuDocsTest Logs added">
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_003_Verify_MobileNumberTextBox_with_Characters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_005_Verify_EmailID_With_InValidEmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_006_Verify_User_is_Created.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_007_Verify_Duplicate_Mobileno_EmailID.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_008_Verify_Userdata_is_Stored_in_Database.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShots/TC_009_Verify_FileUpload.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenShots/TC_002_Verify_EmployeenameTextBox_with_Numbers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenShots/TC_022_Verify_OB_Initiate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestRunner/Regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestRunner/Regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/UploadBandhuDocsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/ReadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/ReadConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Configuration/BandhuDocs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datas/DocsTestDatas.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Logs/BandhuDocsWeb.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.03.25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.06.06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reports/DOCSWEB 2023.03.02.19.08.19.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +56,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="65b42503-d986-4cca-973a-cc838578f0aa" />
+        <option name="accountId" value="3393f5be-facd-4b2a-8afc-e371d31f0748" />
         <option name="url" value="https://github.com/EzhilRj/DOCS.git" />
       </UrlAndAccount>
     </option>
@@ -47,6 +70,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/PageObjects/Bandhu_DocsPage.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BandhuDocs_Test.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/BaseClass.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Utils/DBConfig.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,33 +94,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Automation Workspace/DOCS 1.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "E:/Automation Workspace/Learning_TestNG",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;,
-      &quot;sqlserver.localdb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Utils" />
@@ -347,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677832526899</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="BandhuDocs UploadbandhuDocsTest Logs added">
+      <created>1678111141847</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1678111141847</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,43 +413,8 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>164</line>
+          <line>163</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scripts/UploadBandhuDocs_Test.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

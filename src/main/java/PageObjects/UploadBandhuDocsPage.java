@@ -71,23 +71,29 @@ public class UploadBandhuDocsPage extends BaseClass {
 
     public static void SetEmpname(String empname){
 
+        Employeename.clear();
         Employeename.sendKeys(empname);
         Mobileno.click();
+        log.info(empname);
 
     }
 
     public static void SetMobileno(String mobno){
 
+        Mobileno.clear();
         Mobileno.sendKeys(mobno);
         EmailID.click();
+        log.info(mobno);
 
 
     }
 
     public static void SetEmailid(String email){
 
+        EmailID.clear();
         EmailID.sendKeys(email);
         Mobileno.click();
+        log.info(email);
 
     }
 
@@ -96,6 +102,9 @@ public class UploadBandhuDocsPage extends BaseClass {
         Employeename.sendKeys(Employee);
         Mobileno.sendKeys(Mobilenum);
         EmailID.sendKeys(Email);
+        log.info(Employee);
+        log.info(Mobilenum);
+        log.info(Email);
 
     }
 

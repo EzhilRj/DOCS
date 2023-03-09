@@ -24,12 +24,14 @@ public class BandhuDocs_Test extends BaseClass {
     public void BandhuDocsSheetSetter() throws IOException {
 
         setExcelFile(filepath, "BandhuDocs");
+        log.info("BandhuDocs Sheet initialized");
 
     }
 
     @Test
     public void TC_001_Verify_BandhuDocs_PageTitle() throws IOException {
 
+        log.info("TC_001_Verify_BandhuDocs_PageTitle");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.BandhuProcess();
         Bandhu_DocsPage.Validatetitle(1,1,1,3);
@@ -39,6 +41,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test
     public void TC_002_Employee_DataisShowing() throws IOException {
 
+        log.info("TC_002_Employee_DataisShowing");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         driver.switchTo().frame("myIframe");
         Bandhu_DocsPage.Validatedata(2,3);
@@ -48,6 +51,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_002_Employee_DataisShowing")
     public void TC_003_Verify_AuditScreen_is_Showing() throws IOException, InterruptedException {
 
+        log.info("TC_003_Verify_AuditScreen_is_Showing");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.View();
         Thread.sleep(600);
@@ -58,6 +62,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_003_Verify_AuditScreen_is_Showing")
     public void TC_004_Verify_AuditScreen_Fiedls_Readonly() throws IOException, InterruptedException {
 
+        log.info("TC_004_Verify_AuditScreen_Fiedls_Readonly");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.ValidateAuditscreen(2,4,3);
 
@@ -67,6 +72,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_004_Verify_AuditScreen_Fiedls_Readonly")
     public void TC_005_Verify_Images() throws IOException, InterruptedException {
 
+        log.info("TC_005_Verify_Images");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.ValidateAuditscreen(3,5,3);
 
@@ -75,6 +81,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_005_Verify_Images")
     public void TC_006_Verify_Datas() throws IOException, InterruptedException {
 
+        log.info("TC_006_Verify_Datas");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Saveduniqueid();
         Bandhu_DocsPage.ValidateAuditscreen(4,6,3);
@@ -84,6 +91,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_006_Verify_Datas")
     public void TC_007_Verify_AadharDetails() throws IOException, InterruptedException {
 
+        log.info("TC_007_Verify_AadharDetails");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.Aadharimg();
         Bandhu_DocsPage.ValidateAuditscreen(5,7,3,Bandhu_DocsPage.Aadharno);
@@ -95,6 +103,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_007_Verify_AadharDetails")
     public static void TC_008_Verify_BankDetails() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_008_Verify_BankDetails");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.Bankimg();
         Bandhu_DocsPage.ValidateAuditscreen(5,8,3,Bandhu_DocsPage.Bankaccno);
@@ -106,6 +115,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_008_Verify_BankDetails")
     public static void TC_009_Verify_Reject_without_Reason() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_009_Verify_Reject_without_Reason");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.Reject();
         ValidateAlerts(9,2,9,3);
@@ -115,6 +125,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_009_Verify_Reject_without_Reason")
     public static void TC_010_Verify_Division_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_010_Verify_Division_name_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.Approve();
         Thread.sleep(1000);
@@ -132,6 +143,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_010_Verify_Division_name_is_Mandatory")
     public static void TC_011_Verify_Branch_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_011_Verify_Branch_name_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -148,6 +160,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_011_Verify_Branch_name_is_Mandatory")
     public static void TC_012_Verify_Town_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_012_Verify_Town_name_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -167,6 +180,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_012_Verify_Town_name_is_Mandatory")
     public static void TC_013_Verify_State_name_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_013_Verify_State_name_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -184,6 +198,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_013_Verify_State_name_is_Mandatory")
     public static void TC_014_Verify_RM1_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_014_Verify_RM1_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -202,6 +217,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_014_Verify_RM1_is_Mandatory")
     public static void TC_015_Verify_RM2_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_015_Verify_RM2_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -219,6 +235,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_015_Verify_RM2_is_Mandatory")
     public static void TC_016_Verify_Designation_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_016_Verify_Designation_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -234,6 +251,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_016_Verify_Designation_is_Mandatory")
     public static void TC_017_Verify_ClientBranch_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_017_Verify_ClientBranch_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -251,6 +269,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_017_Verify_ClientBranch_is_Mandatory")
     public static void TC_018_Verify_DOJ_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_018_Verify_DOJ_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -262,6 +281,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_018_Verify_DOJ_is_Mandatory")
     public static void TC_019_Verify_3DaysDOJ_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_019_Verify_3DaysDOJ_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.SETDOJ(xlcon.getCellData(19,1));
         Thread.sleep(1000);
@@ -277,6 +297,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_019_Verify_3DaysDOJ_is_Mandatory")
     public static void TC_020_Verify_DOB_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_020_Verify_DOB_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Thread.sleep(1000);
         Bandhu_DocsPage.initiate();
@@ -289,6 +310,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_020_Verify_DOB_is_Mandatory")
     public static void TC_021_Verify_18Years_is_Mandatory() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_021_Verify_18Years_is_Mandatory");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.SETDOB(GetDate());
         Thread.sleep(1000);
@@ -302,6 +324,7 @@ public class BandhuDocs_Test extends BaseClass {
     @Test(dependsOnMethods = "TC_021_Verify_18Years_is_Mandatory")
     public static void TC_022_Verify_OB_Initiate() throws IOException, InterruptedException, AWTException {
 
+        log.info("TC_022_Verify_OB_Initiate");
         PageFactory.initElements(driver, Bandhu_DocsPage.class);
         Bandhu_DocsPage.SetDivision(xlcon.getCellData(10,1));
         Bandhu_DocsPage.Setbranch(xlcon.getCellData(11,1));

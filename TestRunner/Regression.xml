@@ -7,10 +7,10 @@
     <test name="UploadBandhuDocsTest">
         <classes>
             <class name="Scripts.UploadBandhuDocs_Test">
-              <!--  <methods>
-                    <exclude name = "UploadbandhuDocsSheetsetter"/>
-                    <exclude name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
-                    <exclude name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
+              <methods>
+                    <include name = "UploadbandhuDocsSheetsetter"/>
+                    <include name = "TC_001_Verify_EmployeenameTextBox_with_SpecialCharacters"/>
+                    <!--<exclude name = "TC_002_Verify_EmployeenameTextBox_with_Numbers"/>
                     <exclude name = "TC_003_Verify_MobileNumberTextBox_with_Characters"/>
                     <exclude name = "TC_004_Verify_MobileNumberTextBox_with_SpecialCharacters"/>
                     <exclude name = "TC_005_Verify_EmailID_With_InValidEmail"/>
@@ -22,8 +22,8 @@
                     <exclude name = "TC_011_Verify_ExporButton"/>
                     <exclude name = "TC_012_Verify_UploadButton_Without_Selecting_File"/>
                     <exclude name = "TC_013_Verify_with_EmptyExcel"/>
-                    <exclude name = "TC_014_Verify_TextBoxErrorMessages"/>
-                </methods>-->
+                    <exclude name = "TC_014_Verify_TextBoxErrorMessages"/>-->
+                </methods>
             </class>
 <!--         <class name="Scripts.BandhuDocs_Test">
                 <methods>

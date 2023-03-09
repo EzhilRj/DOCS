@@ -35,7 +35,7 @@ public class BaseClass {
     //Properties File Reading
     static ReadConfig readconfig = new ReadConfig();
     //Log
-   public static Logger log = Logger.getLogger("DOCSWEB1.0");
+    public static Logger log = Logger.getLogger("DOCSWEB1.0");
 
     public static String excelfilepath = filepath;
 
@@ -51,7 +51,7 @@ public class BaseClass {
         preferences.put("download.default_directory",downloadinglocation);
 
         ChromeOptions options =  new ChromeOptions();
-        options.setExperimentalOption("prefs",preferences);
+        options.setExperimentalOption("prefs",preferences).addArguments("--remote-allow-origins=*");
 
         DOMConfigurator.configure("Log4J.xml");
         if (readconfig.GetBrowser().equalsIgnoreCase("Chrome")) {
@@ -74,10 +74,19 @@ public class BaseClass {
 
         }
 
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        //driver.manage().deleteAllCookies();
-        driver.get(readconfig.getapplicationURL());
-        log.info(readconfig.getapplicationURL());
+        if(readconfig.GetEnvironment().equals("Dev")){
+            log.info(readconfig.GetEnvironment());
+            driver.get(DevelopmentURL);
+            log.info(readconfig.GetEnvironment());
+        } else if (readconfig.GetEnvironment().equals("QA")) {
+            driver.get(QAURL);
+            log.info(readconfig.GetEnvironment());
+        } else if (readconfig.GetEnvironment().equals("Live")) {
+            driver.get(LIVEURL);
+            log.info(readconfig.GetEnvironment());
+        }
+
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         PageFactory.initElements(driver, LoginPage.class);
         LoginPage.SetLoginCredentials(readconfig.Getusername(),readconfig.GetPassword(),readconfig.GetClient());
